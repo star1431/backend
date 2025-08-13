@@ -10,8 +10,8 @@
 
 <br>
 
-<detail>
-<summary><h3>1 week</h3></summary>
+<details>
+<summary><h3 style="display:inline-block;">1 week</h3></summary>
 
 ```bash
     2025.08.13 
@@ -22,11 +22,11 @@
         └
 ```
 
-</detail>
+</details>
 
 
-<detail>
-<summary><h3>2 week</h3></summary>
+<details>
+<summary><h3 style="display:inline-block;">2 week</h3></summary>
 
 ```bash
     2025.08.18 
@@ -46,4 +46,4 @@
         └
 ```
 
-</detail>
+</details>
