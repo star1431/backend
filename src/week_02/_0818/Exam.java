@@ -16,7 +16,7 @@ public class Exam { // 클래스 선언 (파일명=클래스명)
 
     public void exam01() {
         int a = 10;
-        int b = 20;
+        int b = 2102;
         int sum = a + b;
         System.out.println("a + b = " + sum);
     }

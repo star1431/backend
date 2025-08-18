@@ -1,11 +1,11 @@
 {
     "java.project.sourcePaths": ["src"],
-    "java.project.outputPath": "bin",
+    "java.project.outputPath": "out/production/backend",
     "java.project.referencedLibraries": [
         "lib/**/*.jar"
     ],
     "files.exclude": {
-        "**/bin/**/*.md": true
+        "**/out/production/backend/**/*.md": true
     },
     "java.compile.nullAnalysis.mode": "automatic"
 }
