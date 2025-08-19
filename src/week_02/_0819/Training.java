@@ -12,7 +12,8 @@ public class Training {
         input.close();
 
         /*
-         * StringTokenizer(파라매터,"구분자식별", 리턴값)
+         * 스트링토큰라이저 util
+         * StringTokenizer(스트링값,"구분자식별", 구분자식별받기 여부)
          */
         StringTokenizer tokenStr = new StringTokenizer(inputVal, "+-*/%", true);
 
