@@ -200,8 +200,27 @@ public class Exam {
                 break;
         }
         
+        int score = 1;
 
-        System.out.println("ㅡㅡㅡㅡㅡㅡㅡ");
+        switch (score) {
+            case 1:
+                System.out.print("A");
+                // break 없음!
+            case 2:
+                System.out.print("B");
+                // break 없음!
+            case 3:
+                System.out.print("C");
+                // break 없음!
+            case 4:
+                System.out.print("D");
+                // break 없음!
+            default:
+                System.out.print("F");
+        }
+        
+
+        System.out.println("\nㅡㅡㅡㅡㅡㅡㅡ");
     }
 }
 
