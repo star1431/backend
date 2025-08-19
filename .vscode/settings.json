@@ -5,7 +5,7 @@
         "lib/**/*.jar"
     ],
     "files.exclude": {
-        "**/out/production/backend/**/*.md": true
+        "**/out/production/backend/**/**/*.md": true
     },
     "java.compile.nullAnalysis.mode": "automatic"
 }
