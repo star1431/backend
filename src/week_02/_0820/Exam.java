@@ -220,6 +220,14 @@ public class Exam {
 
         int[] orgArr = {100, 200, 300, 400, 500};
 
+        // for 방식 
+        int[] copyArr0 = new int[orgArr.length];
+        for(int i = 0; i < orgArr.length; i++) {
+            copyArr0[i] = orgArr[i];
+        }
+
+        copyArr0[0] = 200;
+
         // System.arraycopy() 사용
         int[] copyArr1 = new int[orgArr.length];
         // System.arraycopy(원본배열, 원본인덱스start, 복사배열, 복사인덱스start, 복사할갯수);
@@ -236,9 +244,11 @@ public class Exam {
         copyArr3[0] = -2;
 
         System.out.println("orgArr: " + Arrays.toString(orgArr));
+        System.out.println("copyArr0: " + Arrays.toString(copyArr0));
         System.out.println("copyArr1: " + Arrays.toString(copyArr1));
         System.out.println("copyArr2: " + Arrays.toString(copyArr2));
         System.out.println("copyArr3: " + Arrays.toString(copyArr3));
+
 
         System.out.println("ㅡㅡㅡㅡㅡㅡㅡ");
     }
