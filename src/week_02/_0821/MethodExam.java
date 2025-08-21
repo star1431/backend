@@ -27,7 +27,7 @@ public class MethodExam {
 
     /**
      * add 가변 합산
-     * @param numbers
+     * @param numbers 숫자 가변 or 정수 배열
      * @return (int)total
      */
     public static int add(int... numbers) {
