@@ -26,7 +26,7 @@ public class MethodExam {
     }
 
     /**
-     * add 합산
+     * add 가변 합산
      * @param numbers
      * @return (int)total
      */
@@ -52,8 +52,10 @@ public class MethodExam {
             _add, _minus, _mul, _div, _reNum 
         );
 
-        int _sum = add(1,2,3,4,5,6,7,8,9,10);
-        System.out.println("1~10합산: " + _sum);
+        int _sum0 = add(1,2,3,4,5,6,7,8,9,10);
+        int[] arr0 = {5, 9, 7, 6, 4, 5, 5 }; 
+        System.out.println("1~10합산: " + _sum0);
+        System.out.println("배열 합산: " + add(arr0));
         
     }
 
