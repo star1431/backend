@@ -2,6 +2,7 @@ package week_02._0821;
 import java.util.Arrays;
 import week_02._0821.common.Pen;
 import week_02._0821.common.VendingMachine;
+import week_02._0821.common.Calc;
 
 public class ObjExam {
 
@@ -12,6 +13,7 @@ public class ObjExam {
 
         obj.exam00(); // 펜
         obj.exam01(); // 벤딩머신
+        obj.exam02(); // 칼크
 
 
     }
@@ -50,6 +52,24 @@ public class ObjExam {
         
         System.out.println("machinArr: " + Arrays.toString(machinArr));
         System.out.println("prodArr: " + Arrays.toString(prodArr));
+
+        System.out.println("ㅡㅡㅡㅡㅡㅡㅡ");
+    }
+
+    
+    public void exam02() {
+        System.out.println("exam02 : 칼크 호출");
+
+        Calc calc = new Calc();
+
+        int[] arr = {4, 5, 6};
+        int sum0 = calc.addAll(arr);
+        int sum1 = calc.addAll(1,2,3);
+        double keyCalc = calc.optionKey((double)10, 3, "/");
+
+        System.out.println("[4,5,6] calc.add(arr) : " + sum0);
+        System.out.println("calc.add(1,2,3) : " + sum1);
+        System.out.println("10 / 3 = " + keyCalc);
 
         System.out.println("ㅡㅡㅡㅡㅡㅡㅡ");
     }
