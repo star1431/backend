@@ -18,6 +18,7 @@ public class Exam {
         obj.exam07(); // 배열 선언 방식
         obj.exam08(); // 예제 풀이
         obj.exam09(); // 배열 - 깊은 복사
+        obj.exam10(); // Arrays 유틸리티 클래스 
     }
 
     public void exam00() {
@@ -216,7 +217,7 @@ public class Exam {
     }
 
     public void exam09() {
-        System.out.println("exam09 : 배열 - 깊은 복사");
+        System.out.println("exam10 : 배열 - 깊은 복사");
 
         int[] orgArr = {100, 200, 300, 400, 500};
 
@@ -226,7 +227,7 @@ public class Exam {
             copyArr0[i] = orgArr[i];
         }
 
-        copyArr0[0] = 200;
+        copyArr0[0] = 0;
 
         // System.arraycopy() 사용
         int[] copyArr1 = new int[orgArr.length];
@@ -248,6 +249,39 @@ public class Exam {
         System.out.println("copyArr1: " + Arrays.toString(copyArr1));
         System.out.println("copyArr2: " + Arrays.toString(copyArr2));
         System.out.println("copyArr3: " + Arrays.toString(copyArr3));
+
+
+        System.out.println("ㅡㅡㅡㅡㅡㅡㅡ");
+    }
+    
+    public void exam10() {
+        System.out.println("exam10 : Arrays 유틸리티 클래스 ");
+
+        int[] numbers = {5, 2, 8, 1, 9, 3};
+
+        // 1. toString() - 배열 내용 출력
+        System.out.println("원본 배열: " + Arrays.toString(numbers));
+
+        // 2. sort() - 정렬
+        int[] sorted = Arrays.copyOf(numbers, numbers.length);
+        Arrays.sort(sorted);
+        System.out.println("정렬된 배열: " + Arrays.toString(sorted));
+
+        // 3. binarySearch() - 이진 탐색 (정렬된 배열에서만)
+        int index = Arrays.binarySearch(sorted, 5);
+        System.out.println("5의 위치: " + index);
+
+        // 4. equals() - 배열 비교
+        int[] arr1 = {1, 2, 3};
+        int[] arr2 = {1, 2, 3};
+        int[] arr3 = {1, 2, 4};
+        System.out.println("arr1 == arr2: " + Arrays.equals(arr1, arr2)); // true
+        System.out.println("arr1 == arr3: " + Arrays.equals(arr1, arr3)); // false
+
+        // 5. fill() - 배열 채우기
+        int[] filled = new int[5];
+        Arrays.fill(filled, 7);
+        System.out.println("채워진 배열: " + Arrays.toString(filled));
 
 
         System.out.println("ㅡㅡㅡㅡㅡㅡㅡ");
