@@ -1,6 +1,6 @@
 package week_02._0822;
 
-import java.util.Arrays;
+import static java.lang.Math.random;
 
 public class Exam {
 
@@ -12,7 +12,8 @@ public class Exam {
 
     public void exam00() {
         System.out.println("exam00 : ");
-        
+        int ranNum = (int)(random()*10) + 1;
+        System.out.println(ranNum);
         System.out.println("ㅡㅡㅡㅡㅡㅡㅡ");
     }
 
