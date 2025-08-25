@@ -5,7 +5,7 @@ public class StaticExam {
     static int stVal;
 
     public void insMethod01(){
-        // 스태틱 아닌 메소드인 경우 둘다 접근 가능
+        // 스태틱 아닌 메서드인 경우 둘다 접근 가능
         System.out.println(insVal);
         System.out.println(stVal);
     }
@@ -16,7 +16,7 @@ public class StaticExam {
         stMethod02();
     }
     public static void stMethod01(){
-        // static 메소드 인 경우 static한 필드만 접근 가능!!
+        // static 메서드 인 경우 static한 필드만 접근 가능!!
         // System.out.println(insVal);
         System.out.println(stVal);
     }

@@ -1,4 +1,4 @@
-package week_02._0822.common;
+package week_03._0825.common;
 
 public class Animal {
     protected String name;

@@ -26,16 +26,16 @@ class Lotto {
         int idx = 0;
         while (idx < 6) {
             int num = (int)(Math.random() * 45) + 1;
-            boolean duplicate = false;
+            boolean isCheck = false;
             for (int j = 0; j < idx; j++) {
                 // 중복이면 true
                 if (data[j] == num) {
-                    duplicate = true;
+                    isCheck = true;
                     break;
                 }
             }
             // 중복이 아니면 배열에 저장하고 다음 인덱스로 이동
-            if (!duplicate) {
+            if (!isCheck) {
                 data[idx] = num;
                 idx++;
             }

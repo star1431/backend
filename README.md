@@ -56,12 +56,12 @@
 
 </details>
 <details>
-    <summary><strong>2 week</strong></summary>
+    <summary><strong>3 week</strong></summary>
 
 ```bash
     2025.08.25 
-        ├ 09:00 ~ 12:00 자바 프로그래밍 기초 ()
-        └ 13:00 ~ 18:00 자바 프로그래밍 기초 ()
+        ├ 09:00 ~ 12:00 자바 프로그래밍 기초 (상속)
+        └ 13:00 ~ 18:00 자바 프로그래밍 기초 (getter & setter, 메서드 오버라이딩 & 오버로딩)
     2025.08.26
         ├ 
         └ 

@@ -9,7 +9,7 @@ public class VendingMachine {
     // 생성자
     public VendingMachine() {}
 
-    // 메소드
+    // 메서드
     public String pushProductButton(int menuId) {
         if(menuId == 0) return "봉봉";
         if(menuId == 1) return "콜라";

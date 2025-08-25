@@ -38,7 +38,7 @@ public class ObjExam {
         VendingMachine vm1 = new VendingMachine();
         VendingMachine vm2 = new VendingMachine();
 
-        // 메시지 전송(메소드 호출)
+        // 메시지 전송(메서드 호출)
         String product = vm1.pushProductButton(1);
         System.out.println("선택한 상품: " + product);
 

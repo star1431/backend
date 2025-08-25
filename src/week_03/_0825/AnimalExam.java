@@ -1,5 +1,5 @@
-package week_02._0822;
-import week_02._0822.common.Animal;
+package week_03._0825;
+import week_03._0825.common.Animal;
 
 class Dog extends Animal {
     private String breed;
@@ -12,6 +12,8 @@ class Dog extends Animal {
     public void showBreed() {
         System.out.println("견종: " + breed);
     }
+
+    
 }
 public class AnimalExam {
 

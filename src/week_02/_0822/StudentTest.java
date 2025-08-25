@@ -18,12 +18,12 @@ class Student {
         totalScore += score;
     }
 
-    // 인스턴스 메소드
+    // 인스턴스 메서드
     public void displayInfo() {
         System.out.println(name + ": " + score + "점");
     }
 
-    // 클래스 메소드
+    // 클래스 메서드
     public static double getAverage() {
         if(totalStudents == 0) return 0;
         return (double)totalScore / totalStudents;
@@ -38,7 +38,7 @@ class Student {
 
 public class StudentTest {
     public static void main(String[] args) {
-        // static 메소드는 객체 생성 없이 호출 가능
+        // static 메서드는 객체 생성 없이 호출 가능
         Student.displayStatistics();
         System.out.println("-".repeat(5));
 
@@ -51,7 +51,7 @@ public class StudentTest {
         s3.displayInfo();
         System.out.println("-".repeat(5));
 
-        // 클래스명으로 static 메소드 호출
+        // 클래스명으로 static 메서드 호출
         Student.displayStatistics();
     }
 }
