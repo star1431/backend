@@ -36,5 +36,9 @@ public class InterExam {
         Test01 test01 = new Test01();
         test01.testMethod();
 
+        System.out.println(photo instanceof InterA); // true
+        System.out.println(photo instanceof InterB); // true
+        System.out.println(photo instanceof Photo); // true
+
     }
 }
