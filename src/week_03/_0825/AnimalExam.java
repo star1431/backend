@@ -12,9 +12,8 @@ class Dog extends Animal {
     public void showBreed() {
         System.out.println("견종: " + breed);
     }
-
-
 }
+
 public class AnimalExam {
 
     public static void main(String[] args) {
