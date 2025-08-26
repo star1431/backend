@@ -13,7 +13,7 @@ class Dog extends Animal {
         System.out.println("견종: " + breed);
     }
 
-    
+
 }
 public class AnimalExam {
 
