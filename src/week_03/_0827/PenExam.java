@@ -1,5 +1,7 @@
 package week_03._0827;
 
+import java.util.Objects;
+
 class Pen {
     private String name;        // 제품명
     private String code;        // 제품코드
@@ -38,13 +40,18 @@ class Pen {
 
     @Override
     public int hashCode() {
-        int result = 17;  // 초기값 (보통 17 사용)
         // 각 필드의 해시를 누적
         // 누적 방식: result = 31 * result + fieldHash
-        result = 31 * result + (name != null ? name.hashCode() : 0);
-        result = 31 * result + (code != null ? code.hashCode() : 0);
-        result = 31 * result + (type != null ? type.hashCode() : 0);
-        return result;
+        // 초기값 (보통 17 사용)
+//        int result = 17;
+//        result = 31 * result + (name != null ? name.hashCode() : 0);
+//        result = 31 * result + (code != null ? code.hashCode() : 0);
+//        result = 31 * result + (type != null ? type.hashCode() : 0);
+//        return result;
+
+
+        // import java.util.Objects
+         return Objects.hash(name, code, type);
     }
 }
 
