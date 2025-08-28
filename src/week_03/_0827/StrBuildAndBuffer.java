@@ -36,7 +36,7 @@ public class StrBuildAndBuffer {
         System.out.println("StringBuffer 걸린 시간: " + (end - start) + "ms");
 
         StrBuildAndBuffer sbb = new StrBuildAndBuffer();
-        // sbb.exam();
+        sbb.exam();
     }
 
     public void exam() {
