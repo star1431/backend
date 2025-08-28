@@ -11,32 +11,33 @@ import java.util.Objects;
 import java.util.Collection;
 import java.util.Map.Entry;
 
-class Pen {
-    String color;
 
-    Pen(String color) {
-        this.color = color;
+public class collectionExam {    // ✅ 이 파일(클래스) 안에서만 쓰이게끔: private static 중첩 클래스
+    private static class Pen {
+        String color;
+
+        Pen(String color) {           // 생성자
+            this.color = color;
+        }
+
+        @Override
+        public String toString() {    // 디버깅/출력용 문자열
+            return color + " Pen";
+        }
+
+        @Override
+        public boolean equals(Object o) { // Set 중복 제거를 위해 동등성 정의
+            if (o == null || getClass() != o.getClass()) return false;
+            Pen pen = (Pen) o;
+            return Objects.equals(color, pen.color);
+        }
+
+        @Override
+        public int hashCode() {       // equals와 짝맞춰 해시코드 정의
+            return Objects.hashCode(color);
+        }
     }
 
-    @Override
-    public String toString() {
-        return color + " Pen";
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (o == null || getClass() != o.getClass()) return false;
-        Pen pen = (Pen) o;
-        return Objects.equals(color, pen.color);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hashCode(color);
-    }
-}
-
-public class collectionExam {
     public static void main(String[] args) {
         collectionExam obj = new collectionExam();
         // obj.exam00(); // 어레이리스트
