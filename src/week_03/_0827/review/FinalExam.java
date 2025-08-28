@@ -1,0 +1,71 @@
+package week_03._0827.review;
+import java.util.ArrayList;
+import java.util.List;
+
+class FinalAll {
+    // final 변수 - 값 변경 불가
+    private final int MAX_SIZE = 100;  // 선언과 동시에 초기화 (값 변경 불가)
+    private final String name;         // 생성자에서 한 번만 초기화 가능
+    private final List<String> items;  // 참조는 불변, 내부 요소(add/remove)는 변경 가능
+
+    public FinalAll(String name) {
+        this.name = name;               // 생성자에서 초기화 (필수)
+        this.items = new ArrayList<>(); // 참조는 한 번만 할당 가능
+    }
+
+    // final 메소드 - 오버라이딩 불가
+    public final void display() {
+        System.out.println("Name: " + name + ", Items: " + items);
+    }
+
+    public void addItem(String item) {
+        items.add(item);              // 가능: 참조가 가리키는 리스트의 내용은 변경 가능
+        // items = new ArrayList<>(); // 불가능: 참조 자체를 새로운 객체로 변경 불가
+    }
+    public void removeItem(String item) {
+        items.remove(item);
+    }
+}
+
+class OverRideExam extends FinalAll {
+
+    public OverRideExam(String name) {
+        super(name);
+    }
+
+    // 불가능 - final 메서드는 오버라이딩 불가
+    // @Override
+    // public void display() { ... }
+
+    // 다른 메서드는 오버라이딩 가능
+    public void addItem(String item) {
+        System.out.println("추가하려는 아이템: " + item);
+        super.addItem(item);
+    }
+}
+
+
+// 파이널 클래스 - 하위 클래스가 상속 할 수 없음.
+final class ParentExam { }
+
+// ❌ 에러
+//class Child extends FinalAll {
+//}
+
+
+public class FinalExam {
+    public static void main(String[] args) {
+        FinalAll f1 = new FinalAll("기본 FinalAll");
+        f1.addItem("사과");
+        f1.addItem("바나나");
+        f1.display(); // Name: 기본 FinalAll, Items: [사과, 바나나]
+
+        OverRideExam f2 = new OverRideExam("상속된 클래스");
+        f2.addItem("포도");   // OverRideExam에서 오버라이딩된 addItem 실행됨
+        f2.addItem("수박");
+        f2.display(); // Name: 상속된 클래스, Items: [포도, 수박]
+        f2.removeItem("수박");
+        f2.display(); // Name: 상속된 클래스, Items: [포도]
+
+    }
+}

@@ -13,8 +13,7 @@ public class Exam {
     }
 
     public void exam00() {
-        System.out.println("exam01 : 스트링 비교 ");
-        System.out.println("exam00 : ");
+        System.out.println("exam00 : 스트링 비교 ");
         String str1 = "Hello";
         String str2 = "Hello";
         String str3 = new String("Hello");
@@ -33,37 +32,25 @@ public class Exam {
 
     public void exam01() {
         System.out.println("exam01 : 스트링 메서드 ");
-        String str = "Hello Java World  ";
+        
+        String str = " Hello Java ";
+        System.out.println(str.length());                 // 11
+        System.out.println(str.charAt(2));                // e      -> 인덱스 0=' ', 1='H', 2='e'
+        System.out.println(str.substring(1, 6));          // Hello  -> 인덱스 1~5 까지
+        System.out.println(str.indexOf("Java"));          // 7
+        System.out.println(str.contains("Java"));         // true
+        System.out.println(str.startsWith(" He"));        // true
+        System.out.println(str.endsWith("va "));          // true
+        System.out.println(str.toLowerCase());            // " hello java "
+        System.out.println(str.toUpperCase());            // " HELLO JAVA "
+        System.out.println(str.replace("Java", "World")); // " Hello World "
+        System.out.println(str.trim());                   // "Hello Java"
 
-        // 길이와 문자 접근
-        System.out.println("길이: " + str.length());           // 20
-        System.out.println("5번째 문자: " + str.charAt(0));    // 'l'
-
-        // 부분 문자열
-        System.out.println(str.substring(8, 12));              // "Java"
-
-        // 검색
-        System.out.println(str.indexOf("Java"));               // 8
-        System.out.println(str.contains("Java"));              // true
-        System.out.println(str.startsWith("  Hello"));         // true
-        System.out.println(str.endsWith("World  "));           // true
-
-        // 변환
-        System.out.println(str.toLowerCase());                 // 소문자로
-        System.out.println(str.toUpperCase());                 // 대문자로
-        System.out.println(str.trim());                        // 앞뒤 공백 제거
-        System.out.println(str.replace("Java", "Python"));     // 치환
-
-        // 분할과 결합
-        String[] words = str.trim().split(" ");
-        System.out.println(Arrays.toString(words));            // [Hello, Java, World]
-
-        String joined = String.join("-", words);
-        System.out.println(joined);                            // Hello-Java-World
-
-        // 형식화
-        String formatted = String.format("이름: %s, 나이: %d", "홍길동", 25);
-        System.out.println(formatted);
+        String colors = "red,green,blue";
+        String[] arr = colors.split(",");
+        System.out.println(Arrays.toString(arr));         // [red, green, blue]
+        System.out.println(String.join("-", arr));        // red-green-blue
+        System.out.println(String.format("이름: %s, 나이: %d", "홍길동", 20)); 
         System.out.println("ㅡㅡㅡㅡㅡㅡㅡ");
     }
 

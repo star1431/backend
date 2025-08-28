@@ -2,18 +2,18 @@ package week_03._0827;
 
 public class StrBuildAndBuffer {
     public static void main(String[] args) {
-        int loop = 50000;
+        int loop = 100_000;
         long start, end;
 
         // String (불변 → 매번 새 객체 생성 → 가장 느림)
         start = System.currentTimeMillis();    // 시작시간
         String str = "";
         // loop 만큼 돌려서 시간지연 발생시키기
-        for (int i = 0; i < loop; i++) {
-            str += "a";
-        }
+//        for (int i = 0; i < loop; i++) {
+//            str += "a";
+//        }
         end = System.currentTimeMillis();     // 종료시간
-        System.out.println("String 걸린 시간: " + (end - start) + "ms");
+//        System.out.println("String 걸린 시간: " + (end - start) + "ms");
 
         // StringBuilder (가변, 동기화 ❌ → 빠름)
         start = System.currentTimeMillis();   // 시작시간
@@ -36,7 +36,7 @@ public class StrBuildAndBuffer {
         System.out.println("StringBuffer 걸린 시간: " + (end - start) + "ms");
 
         StrBuildAndBuffer sbb = new StrBuildAndBuffer();
-        sbb.exam();
+        // sbb.exam();
     }
 
     public void exam() {
