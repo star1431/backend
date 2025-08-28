@@ -1,4 +1,4 @@
-package week_03._0828.exam;
+package week_03._0828.exam0828;
 import java.util.Objects;
 
 public class Student {

@@ -1,6 +1,12 @@
-package week_03._0828.exam;
-import java.util.*;
-// import java.util.HashMap;
+package week_03._0828.exam0828;
+import java.util.Scanner;
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Set;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.LinkedHashMap;
+import java.util.HashMap;
 // import java.util.Map.Entry;
 
 public class StudentInfoSystem {
@@ -92,29 +98,48 @@ public class StudentInfoSystem {
         /*
          * 응용
          * 7. 모든 학생을 List에 담은 뒤, 전공별로 학생들을 Map<String, List<Student>>에 담아 이름을 출력하기
-         * 컴퓨터공학 : [Kim, Lee]  
-            경영학 : [Park]  
-            수학과 : [Choi, Jung]
+         * 예시)
+         * 컴퓨터공학 : [Kim, Lee]
+         * 경영학 : [Park]  
+         * 수학과 : [Choi, Jung] 
          */
 
-        // 좀더 봐야겠습니다.
+        /*
+         * 중첩 제네릭 
+         *  제네릭 안에 제네릭이 들어간 구조
+         *  Map<K,V> 구조에서
+         *  K = String  |  V = List<Student>
+         *  전공문자열   |  해당전공 학생리스트
+         */
         Map<String, List<Student>> majorMap = new HashMap<>();
 
         for (Student item : stuList) {
             String major = item.getMajor();
 
+            // 해당키가 없으면 리스트를 먼저 준비 (containsKey = 해당키 있으면 true)
             if(!majorMap.containsKey(major)) {
                 majorMap.put(major, new ArrayList<>());
             }
+            // 해당키에 벨류 추가
             majorMap.get(major).add(item);
         }
+        // ex :교육학=[Student{... major='교육학'}, Student{... major='교육학'}]
+        // System.out.println(majorMap);
+        
+        // [철학, 문헌정보학, 심리학, 교육학]
+        // System.out.println(majorMap.keySet());
 
+        // 전공별 출력 (keySet = Map에 있는 키값들만 Set으로 반환)
         for (String item : majorMap.keySet()) {
-            System.out.print(item + ": ");
-            for(Student item2 : majorMap.get(item)) {
-                System.out.print(item2.getName() + " ");
+            System.out.print(item + ": [");
+
+            for (int i = 0; i < majorMap.get(item).size(); i++) {
+                System.out.print(majorMap.get(item).get(i).getName());
+                if (i < majorMap.get(item).size() - 1) {
+                    System.out.print(", ");
+                }
             }
-            System.out.println();
+            System.out.print("]\n");
         }
     }
 }
