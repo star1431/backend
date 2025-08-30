@@ -182,7 +182,7 @@ mini_project
     * `movieTotal()`: 총 영화 수 전달
     * `MovieBoard()`: 영화 전체 목록 출력
     * `reservedMovieBoard()`: 예매된 영화 목록 출력
-    * `movieSeatBorad(id)`: 해당 영화 좌석표 출력
+    * `movieSeatboard(id)`: 해당 영화 좌석표 출력
     * `movieInfo(id)`:  해당 영화 정보 출력
     * `selectMovie(str,num)` : 목록번호 기반 case별 해당 영화 id 전달
         - 읽기,예매 = 영화목록 기준

@@ -118,7 +118,7 @@ public class MovieService {
      * 해당영화 좌석표 출력
      * @param id 영화 고유 아이디
      */
-    public void movieSeatBorad(String id) {
+    public void movieSeatboard(String id) {
         System.out.println("┌───────────────────────────────────────┐");
         System.out.println("│                Screen                 │");
         System.out.println("└───────────────────────────────────────┘");
