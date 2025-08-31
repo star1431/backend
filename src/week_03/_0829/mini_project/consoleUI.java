@@ -102,7 +102,7 @@ public class consoleUI {
         // 영화 정보 및 영화 좌석 노출
         printTitle("예매 등록 : 좌석 예매");
         service.movieInfo(id);
-        service.movieSeatboard(id);
+        service.movieSeatBoard(id);
 
         // 좌석 예매
         System.out.println();
@@ -280,7 +280,7 @@ public class consoleUI {
             // 영화 정보 및 영화 좌석 노출
             printTitle("영화 목록 - 좌석표");
             service.movieInfo(id);
-            service.movieSeatboard(id);
+            service.movieSeatBoard(id);
             if(!askBack("이전")) break;
         }
     }
