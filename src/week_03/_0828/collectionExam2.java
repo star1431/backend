@@ -47,35 +47,5 @@ public class collectionExam2 {
     }
 
     public static void main(String[] args) {
-        List<Pen> pen = new ArrayList<>();
-        pen.add(new Pen("볼펜", "검정"));
-        pen.add(new Pen("연필", "파랑"));
-        pen.add(new Pen("샤프", "빨강"));
-
-        pen.add(new Pen("연필", "검정"));
-        pen.add(new Pen("연필", "초록"));
-
-        // Map<문자열, List<Pen>>
-        Map<String, List<Pen>> map = new HashMap<>();
-
-        // key 타입 기준 삽입
-        for (Pen p : pen) {
-            String type = p.getType();
-            // 해당키 없으면 생성
-            if (!map.containsKey(type)) {
-                map.put(type, new ArrayList<>());
-            }
-            // 해당키에 벨류 삽입
-            map.get(type).add(p);
-        }
-
-        for (Map.Entry<String, List<Pen>> entry : map.entrySet()) {
-            System.out.println(entry.getKey() + " : " + entry.getValue());
-        }
-        /*
-         * 볼펜 : [Pen{type='볼펜', color='검정'}]
-         * 샤프 : [Pen{type='샤프', color='빨강'}]
-         * 연필 : [Pen{type='연필', color='파랑'}, Pen{type='연필', color='검정'}, Pen{type='연필', color='초록'}]
-         */
     }
 }
