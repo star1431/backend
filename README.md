@@ -10,6 +10,12 @@
 ✔️ 훈련기간 : 25.08.13 - 26.02.25
 
 <br>
+<details>
+    <summary><strong>etc</strong></summary>
+
+* [java_주요메서드_정리.md](./src/etc/java_주요메서드_정리.md)
+
+</details>
 
 <details>
     <summary><strong>1 week</strong></summary>

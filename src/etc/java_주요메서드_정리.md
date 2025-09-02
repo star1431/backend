@@ -16,7 +16,7 @@
 | toLowerCase() | 문자열을 모두 소문자로 변환 | "JAVA".toLowerCase() → "java" |
 | trim() | 앞뒤 공백 제거 | " hi ".trim() → "hi" |
 | replace(a, b) | 문자열 a를 b로 모두 치환 | "apple".replace("p", "x") → "axxle" |
-| split(regex) | 구분자를 기준으로 문자열 배열 반환 | "a,b,c".split(",") → ["a","b","c"] |
+| split(regex) | 구분자를 기준으로 문자열 배열 반환 | "a,b,c".split(",") → \["a","b","c"\] |
 | join(delim, arr) | 배열 요소를 구분자와 함께 문자열로 합침 | String.join("-", "a","b","c") → "a-b-c" |
 | valueOf(x) | 기본형 값을 문자열로 변환 | String.valueOf(100) → "100" |
 | isEmpty() | 문자열이 비어있는지 확인 (길이 0) | "".isEmpty() → true |
@@ -73,7 +73,21 @@
 | fill(array, value) | 배열 전체 값 채우기 | Arrays.fill(arr, 0) |
 | toString(array) | 배열 문자열 변환 | Arrays.toString(arr) |
 
-### Collections 주요 메서드
+### Collection 주요 메서드 (인터페이스 | .메서드형)
+
+| 메서드 | 설명 | 예시 |
+| --- | --- | --- |
+| add(E e) | 요소 추가 | list.add("사과") |
+| remove(Object o) | 요소 삭제 | list.remove("사과") |
+| contains(Object o) | 요소 포함 여부 | list.contains("사과") |
+| size() | 요소 개수 반환 | list.size() |
+| clear() | 모든 요소 삭제 | list.clear() |
+| isEmpty() | 비어있는지 확인 | list.isEmpty() |
+| iterator() | 반복자 반환 | for(String s : list) { ... } |
+| toArray() | 배열로 변환 (Object\[\]) | list.toArray() |
+| toArray(T\[\] a) | 배열로 변환 (제네릭 타입 유지) | list.toArray(new String\[0\]) |
+
+### Collections 주요 메서드 (클래스 static형)
 
 | 메서드 | 설명 | 예시 |
 | --- | --- | --- |
@@ -90,7 +104,7 @@
 
 ### Scanner 주요 메서드
 
-```java
+```
 Scanner sc = new Scanner();
 ```
 
@@ -127,6 +141,105 @@ Scanner sc = new Scanner();
 | getHour(), getMinute(), getSecond() | 시/분/초 가져오기 | time.getHour() |
 | plusHours(n), minusMinutes(n) | 시/분 단위 연산 | time.plusHours(2) |
 | isBefore(time), isAfter(time) | 시간 비교 | time1.isAfter(time2) |
+
+
+### Period (날짜 간격 계산)
+
+| 메서드                                      | 설명                    | 예시                     |
+| ---------------------------------------- | --------------------- | ---------------------- |
+| between(d1, d2)                          | 두 날짜 차이를 `Period`로 반환 | Period.between(d1, d2) |
+| getYears(), getMonths(), getDays()       | 년/월/일 단위 반환           | p.getDays()            |
+| plusDays(n), plusMonths(n), plusYears(n) | 기간 더하기                | p.plusMonths(2)        |
+| minusDays(n), minusMonths(n)             | 기간 빼기                 | p.minusDays(5)         |
+| isZero()                                 | 기간이 0인지 확인            | p.isZero()             |
+| isNegative()                             | 음수 여부(과거) 확인          | p.isNegative()         |
+
+
+### Duration (시간 간격 계산)
+
+| 메서드                                  | 설명                            | 예시                       |
+| ------------------------------------ | ----------------------------- | ------------------------ |
+| between(t1, t2)                      | 두 시간/날짜시간 차이를 `Duration`으로 반환 | Duration.between(t1, t2) |
+| ofDays(n), ofHours(n), ofMinutes(n)  | 직접 Duration 생성                | Duration.ofHours(3)      |
+| getSeconds(), toMinutes(), toHours() | 단위 변환                         | d.toMinutes()            |
+| plusHours(n), plusMinutes(n)         | 시간 더하기                        | d.plusHours(1)           |
+| minusHours(n), minusMinutes(n)       | 시간 빼기                         | d.minusMinutes(30)       |
+| isZero()                             | 0인지 확인                        | d.isZero()               |
+| isNegative()                         | 음수 여부(과거) 확인                  | d.isNegative()           |
+
+### ChronoUnit (간단한 차이 계산 유틸)
+
+| 메서드                     | 설명            | 예시                                 |
+| ----------------------- | ------------- | ---------------------------------- |
+| DAYS.between(d1, d2)    | 두 날짜의 일수 차이   | ChronoUnit.DAYS.between(d1, d2)    |
+| MONTHS.between(d1, d2)  | 두 날짜의 개월 수 차이 | ChronoUnit.MONTHS.between(d1, d2)  |
+| YEARS.between(d1, d2)   | 두 날짜의 연도 차이   | ChronoUnit.YEARS.between(d1, d2)   |
+| HOURS.between(t1, t2)   | 두 시간의 시 차이    | ChronoUnit.HOURS.between(t1, t2)   |
+| MINUTES.between(t1, t2) | 두 시간의 분 차이    | ChronoUnit.MINUTES.between(t1, t2) |
+
+### 관련 예시 (Period / Duration / ChronoUnit 비교)
+```java
+public class DateTimeExample {
+    public static void main(String[] args) {
+        // -------------------
+        // 1. Period (날짜 간격)
+        // -------------------
+        LocalDate today = LocalDate.of(2025, 9, 2);
+        LocalDate targetDate = LocalDate.of(2026, 1, 10);
+
+        Period period = Period.between(today, targetDate);
+        System.out.println("Period 결과: " + period); // P0Y4M8D
+        System.out.println("년: " + period.getYears());
+        System.out.println("월: " + period.getMonths());
+        System.out.println("일: " + period.getDays());
+        System.out.println("isNegative(): " + period.isNegative());
+        System.out.println();
+
+        // -------------------
+        // 2. Duration (시간 간격)
+        // -------------------
+        LocalTime startTime = LocalTime.of(10, 0, 0);
+        LocalTime endTime = LocalTime.of(13, 45, 30);
+
+        Duration duration = Duration.between(startTime, endTime);
+        System.out.println("Duration 결과: " + duration); // PT3H45M30S
+        System.out.println("총 초(second): " + duration.getSeconds());
+        System.out.println("총 분(minute): " + duration.toMinutes());
+        System.out.println("isZero(): " + duration.isZero());
+        System.out.println();
+
+        // -------------------
+        // 3. ChronoUnit (숫자 차이 계산)
+        // -------------------
+        LocalDateTime startDateTime = LocalDateTime.of(2025, 9, 2, 10, 0);
+        LocalDateTime endDateTime = LocalDateTime.of(2025, 9, 3, 15, 30);
+
+        long days = ChronoUnit.DAYS.between(startDateTime, endDateTime);
+        long hours = ChronoUnit.HOURS.between(startDateTime, endDateTime);
+        long minutes = ChronoUnit.MINUTES.between(startDateTime, endDateTime);
+
+        System.out.println("ChronoUnit DAYS: " + days);      // 1
+        System.out.println("ChronoUnit HOURS: " + hours);    // 29
+        System.out.println("ChronoUnit MINUTES: " + minutes);// 1770
+    }
+}
+```
+```bash
+Period 결과: P0Y4M8D
+년: 0
+월: 4
+일: 8
+isNegative(): false
+
+Duration 결과: PT3H45M30S
+총 초(second): 13530
+총 분(minute): 225
+isZero(): false
+
+ChronoUnit DAYS: 1
+ChronoUnit HOURS: 29
+ChronoUnit MINUTES: 1770
+```
 
 ---
 
@@ -177,8 +290,8 @@ Scanner sc = new Scanner();
 | containsKey(Object key) | 해당 key가 존재하는지 확인 | map.containsKey("001") |
 | containsValue(Object v) | 해당 value가 존재하는지 확인 | map.containsValue("Kim") |
 | entrySet() | key-value 쌍 집합 반환 → 전체 순회에 사용 | for(Map.Entry<String,String> e : map.entrySet()) { ... } |
-| keySet() | key들만 모아서 Set<K> 반환 | for(String k : map.keySet()) { ... } |
-| values() | value들만 모아서 Collection<V> 반환 | for(String v : map.values()) { ... } |
+| keySet() | key들만 모아서 Set 반환 | for(String k : map.keySet()) { ... } |
+| values() | value들만 모아서 Collection 반환 | for(String v : map.values()) { ... } |
 | size() | 엔트리 개수 반환 | map.size() |
 | clear() | 모든 엔트리 삭제 | map.clear() |
 | getOrDefault(key, def) | key 없으면 기본값 반환 | map.getOrDefault("999", "Unknown") |
@@ -187,4 +300,41 @@ Scanner sc = new Scanner();
 | replace(key, old, new) | old 값이 일치할 때만 교체 | map.replace("001", "Kim", "Choi") |
 | forEach(BiConsumer) | 람다식 순회 | map.forEach((k,v) -> System.out.println(k+":"+v)) |
 | merge(key, value, func) | 기존 값과 병합 | map.merge("001", 1, Integer::sum) |
-| compute(key, func) | key 기반 값 계산 후 갱신 | map.compute("001", (k,v) -> v+"_new") |
+| compute(key, func) | key 기반 값 계산 후 갱신 | map.compute("001", (k,v) -> v+"\_new") |
+
+### Map.Entry 주요 메서드
+
+| 메서드 | 설명 | 예시 |
+| --- | --- | --- |
+| getKey() | 엔트리의 key 반환 | entry.getKey() |
+| getValue() | 엔트리의 value 반환 | entry.getValue() |
+| setValue(V value) | 엔트리의 value 변경 (해당 Map에도 반영됨) | entry.setValue("새값") |
+| equals(Object o) | 다른 엔트리와 key/value가 같은지 비교 | entry1.equals(entry2) |
+| hashCode() | key와 value 기준 해시코드 반환 | entry.hashCode() |
+| toString() | `"key=value"` 문자열 반환 | System.out.println(entry) |
+
+Map과 Entry의 관계
+
+-   Map<K, V> : key와 value를 한 쌍으로 저장하는 자료구조
+    -   → 예: "학번" → "이름" , "아이디" → "비밀번호"
+-   Map.Entry<K,V> : Map 안에 들어가는 **"key-value 쌍 하나"**를 표현하는 객체
+    -   → 즉, Map을 이루는 최소 단위
+
+```
+Map<String, String> map = new HashMap<>();
+map.put("A", "사과");
+map.put("B", "바나나");
+map.put("C", "체리");
+
+// entrySet() → key-value 쌍 집합 반환
+for (Map.Entry<String, String> entry : map.entrySet()) {
+    System.out.println(entry.getKey() + " = " + entry.getValue());
+}
+```
+
+```
+# 실행 결과 
+A = 사과
+B = 바나나
+C = 체리
+```
