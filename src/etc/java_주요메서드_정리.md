@@ -122,25 +122,51 @@ Scanner sc = new Scanner();
 
 ### LocalDate (날짜전용)
 
-| 메서드 | 설명 | 예시 |
-| --- | --- | --- |
-| now() | 현재 날짜 반환 | LocalDate.now() → 2025-08-29 |
-| of(y,m,d) | 특정 날짜 생성 | LocalDate.of(2025, 1, 1) |
-| getYear(), getMonth(), getDayOfMonth() | 연/월/일 가져오기 | date.getYear() |
-| plusDays(n), plusMonths(n), plusYears(n) | 날짜 더하기 | date.plusDays(7) |
-| minusDays(n), minusMonths(n) | 날짜 빼기 | date.minusMonths(1) |
-| isBefore(date), isAfter(date), isEqual(date) | 날짜 비교 | date1.isBefore(date2) |
-| withYear(y), withMonth(m) | 특정 필드 변경 | date.withYear(2030) |
+| 메서드                                          | 설명                                 | 예시                                                     |
+| -------------------------------------------- | ---------------------------------- | ------------------------------------------------------ |
+| now()                                        | 현재 날짜 반환                           | LocalDate.now() <br>→ 2025-08-29                           |
+| of(y,m,d)                                    | 특정 날짜 생성                           | LocalDate.of(2025, 1, 1)                               |
+| parse(str)                                   | 문자열을 LocalDate로 변환 (기본 yyyy-MM-dd) | LocalDate.parse("2025-01-01")                          |
+| format(fmt)                                  | LocalDate를 문자열로 변환                 | date.format(DateTimeFormatter.ofPattern("yyyy/MM/dd")) |
+| getYear(), getMonth(), getDayOfMonth()       | 연/월/일 가져오기                         | date.getYear()                                         |
+| plusDays(n), plusMonths(n), plusYears(n)     | 날짜 더하기                             | date.plusDays(7)                                       |
+| minusDays(n), minusMonths(n)                 | 날짜 빼기                              | date.minusMonths(1)                                    |
+| isBefore(date)                               | 날짜 비교 (this < date)                | date1.isBefore(date2)                                  |
+| isAfter(date)                                | 날짜 비교 (this > date)                | date1.isAfter(date2)                                   |
+| isEqual(date)                                | 날짜 비교 (this == date)               | date1.isEqual(date2)                                   |
+| withYear(y), withMonth(m), withDayOfMonth(d) | 특정 필드 변경                           | date.withYear(2030)                                    |
+| lengthOfMonth()                              | 해당 월의 일 수                          | date.lengthOfMonth() → 31                              |
+| lengthOfYear()                               | 해당 년의 일 수(윤년 체크 가능)                | date.lengthOfYear() → 366                              |
+
 
 ### LocalTime (시간 전용)
 
-| 메서드 | 설명 | 예시 |
-| --- | --- | --- |
-| now() | 현재 시간 반환 | LocalTime.now() → 12:34:56.789 |
-| of(h,m,s) | 특정 시간 생성 | LocalTime.of(10, 30, 0) |
-| getHour(), getMinute(), getSecond() | 시/분/초 가져오기 | time.getHour() |
-| plusHours(n), minusMinutes(n) | 시/분 단위 연산 | time.plusHours(2) |
-| isBefore(time), isAfter(time) | 시간 비교 | time1.isAfter(time2) |
+| 메서드                                            | 설명                               | 예시                                                  |
+| ---------------------------------------------- | -------------------------------- | --------------------------------------------------- |
+| now()                                          | 현재 시간 반환                         | LocalTime.now() <br>→ 12:34:56.789                      |
+| of(h,m,s)                                      | 특정 시간 생성                         | LocalTime.of(10, 30, 0)                             |
+| parse(str)                                     | 문자열을 LocalTime으로 변환 (HH\:mm\:ss) | LocalTime.parse("10:15:30")                         |
+| format(fmt)                                    | LocalTime을 문자열로 변환               | time.format(DateTimeFormatter.ofPattern("HH시 mm분")) |
+| getHour(), getMinute(), getSecond(), getNano() | 시/분/초/나노 가져오기                    | time.getHour()                                      |
+| plusHours(n), minusMinutes(n)                  | 시/분 단위 연산                        | time.plusHours(2)                                   |
+| isBefore(time), isAfter(time)                  | 시간 비교                            | time1.isAfter(time2)                                |
+| withHour(h), withMinute(m)                     | 특정 필드 변경                         | time.withHour(22)                                   |
+| toSecondOfDay()                                | 자정(0시)부터의 초 단위 값                 | time.toSecondOfDay() → 37800                        |
+
+
+### LocalDateTime (날짜+시간)
+| 메서드                                                                         | 설명                                                 | 예시                                                             |
+| --------------------------------------------------------------------------- | -------------------------------------------------- |----------------------------------------------------------------|
+| now()                                                                       | 현재 날짜·시간 반환                                        | LocalDateTime.now() <br>→ 2025-08-29T12:34:56.789              |
+| of(y,m,d,h,m,s)                                                             | 특정 날짜·시간 생성                                        | LocalDateTime.of(2025, 1, 1, 10, 30, 0)                        |
+| parse(str)                                                                  | 문자열을 LocalDateTime으로 변환 (기본 yyyy-MM-ddTHH\:mm\:ss) | LocalDateTime.parse("2025-01-01T10:15:30")                     |
+| format(fmt)                                                                 | LocalDateTime을 문자열로 변환                             | dt.format(DateTimeFormatter.ofPattern("yyyy/MM/dd HH\:mm\:ss")) |
+| getYear(), getMonth(), getDayOfMonth(), getHour(), getMinute(), getSecond() | 날짜·시간 필드 가져오기                                      | dt.getYear(), dt.getHour()                                     |
+| plusDays(n), plusHours(n)                                                   | 날짜·시간 더하기                                          | dt.plusDays(3), dt.plusHours(5)                                |
+| minusMonths(n), minusMinutes(n)                                             | 날짜·시간 빼기                                           | dt.minusMonths(1), dt.minusMinutes(30)                         |
+| isBefore(dt), isAfter(dt), isEqual(dt)                                      | 날짜·시간 비교                                           | dt1.isBefore(dt2)                                              |
+| withYear(y), withMonth(m), withDayOfMonth(d), withHour(h)                   | 특정 필드 변경                                           | dt.withHour(22)                                                |
+| toLocalDate(), toLocalTime()                                                | 날짜·시간 분리                                           | dt.toLocalDate(), dt.toLocalTime()                             |
 
 
 ### Period (날짜 간격 계산)
