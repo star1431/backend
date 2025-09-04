@@ -31,11 +31,5 @@ public class Exam {
 
         prints("end", ".");
     }
-    
-    
-    
-    public static void exam02() {
-    }
-    public static void exam03() {
-    }
+
 }
