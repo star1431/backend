@@ -1,0 +1,4 @@
+SHOW TABLES;
+
+SELECT * FROM emp;
+SELECT * FROM dept;
