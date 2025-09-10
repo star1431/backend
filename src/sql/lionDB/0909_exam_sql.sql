@@ -16,6 +16,7 @@ INSERT INTO test_table (name) VALUES ('테스트');
 
 /* 테이블 내용 보기 */
 SELECT * FROM test_table;
+SELECT * FROM emp;
 
 /* id key값 기준 행 제거 */
 DELETE FROM test_table WHERE id IN (2, 3, 4); 
