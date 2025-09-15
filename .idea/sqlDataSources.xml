@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DdlMappings">
+    <mapping uuid="135ce9e8-af5a-49ea-83ee-51281ccacef3" name="star1431 Mapping">
+      <data-sources db="19675a1d-99c2-4efc-a632-3f1870a00b9e" />
+      <scope>
+        <node kind="schema">
+          <name qname="likedb" />
+          <name qname="liondb" />
+          <name qname="minprojdb" />
+        </node>
+      </scope>
+    </mapping>
+    <mapping uuid="2dad8c2e-5ee8-4853-9fb6-4bda4ef4b69c" name="star1431 Mapping [2]">
+      <data-sources db="8fba5fc7-4e61-4088-9006-aa72b23ab1ec" />
+      <scope>
+        <node kind="database" negative="1" />
+      </scope>
+    </mapping>
+  </component>
+</project>
