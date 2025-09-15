@@ -1,0 +1,8 @@
+
+CREATE DATABASE minprojdb;
+SHOW DATABASES;
+GRANT ALL PRIVILEGES on minprojdb.* to 'star1431'@'%';
+SHOW GRANTS FOR 'star1431'@'%';
+
+SHOW DATABASES LIKE 'miniprojdb';
+FLUSH PRIVILEGES;

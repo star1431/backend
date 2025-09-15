@@ -224,3 +224,13 @@ SELECT
     sal,
     RANK() OVER(PARTITION BY deptno ORDER BY sal DESC) AS dept_rank
 FROM emp;
+
+
+
+
+
+
+SELECT ename, sal FROM emp
+	WHERE sal <= (
+		SELECT avg(sal) FROM emp 
+    );
