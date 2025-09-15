@@ -15,6 +15,7 @@ USE mysql;
 -- 권한부여
 GRANT ALL PRIVILEGES on likedb.* to 'lion'@'%';
 GRANT ALL PRIVILEGES on likedb.* to 'star1431'@'%';
+commit;
 
 FLUSH PRIVILEGES;
 

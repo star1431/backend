@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourcePerFileMappings">
-    <file url="file://$PROJECT_DIR$/src/week_05/_0911/sql/0911_liondb_exam1.sql" value="2e2fea26-d3e4-46b9-b0d7-ef2420bcaab5" />
-    <file url="file://$PROJECT_DIR$/src/week_05/_0912/sql/0912_liondb_exam1.sql" value="2e2fea26-d3e4-46b9-b0d7-ef2420bcaab5" />
-    <file url="file://$PROJECT_DIR$/src/week_05/_0912/sql/0912_liondb_exam2.sql" value="2e2fea26-d3e4-46b9-b0d7-ef2420bcaab5" />
+    <file url="file://$PROJECT_DIR$/src/week_06/_0915/sql/likeDB_query.sql" value="b7e157a1-d6c8-47c4-9f02-e5362c74c990" />
+    <file url="file://$PROJECT_DIR$/src/week_06/_0915/sql/miniDB_query.sql" value="b7e157a1-d6c8-47c4-9f02-e5362c74c990" />
   </component>
 </project>

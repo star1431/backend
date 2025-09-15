@@ -16,7 +16,7 @@ INSERT into age_grade VALUE
     
 -- table : 무비
 CREATE TABLE movies (
-	id 			int	        	PRIMARY KEY AUTO_INCREMENT,
+	id 			int	        	PRIMARY KEY AUTO_INCREMENT, -- 삭제 추가 반복되면 아이디는 계속 누적
     title		varchar(100)    UNIQUE NOT NULL,
     age_grade 	varchar(3)		NOT NULL,
     genre   	varchar(30) 	NOT NULL,

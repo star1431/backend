@@ -16,5 +16,6 @@
       <entry name="!?*.aj" />
       <entry name="!*.md" />
     </wildcardResourcePatterns>
+    <bytecodeTargetLevel target="21" />
   </component>
 </project>
