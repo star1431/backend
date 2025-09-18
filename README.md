@@ -148,7 +148,7 @@
 
 
 <details>
-    <summary><strong>5 week</strong></summary>
+    <summary><strong>6 week</strong></summary>
 
 ```bash
     2025.09.15
@@ -167,10 +167,10 @@
         ├ 
         └ 
 ```
-* [0915내용.md](./src/week_05/_0915/0915내용.md)
-* [0916내용.md](./src/week_05/_0916/0916내용.md)
-* [0917내용.md](./src/week_05/_0917/0917내용.md)
-* [0918내용.md](./src/week_05/_0918/0918내용.md)
+* [0915내용.md](./src/week_06/_0915/0915내용.md)
+* [0916내용.md](./src/week_06/_0916/0916내용.md)
+* [0917내용.md](./src/week_06/_0917/0917내용.md)
+* [0918내용.md](./src/week_06/_0918/0918내용.md)
 
 
 </details>
