@@ -1,3 +1,4 @@
+USE liondb;
 
 CREATE TABLE books (
     pk_id   int PRIMARY KEY AUTO_INCREMENT,

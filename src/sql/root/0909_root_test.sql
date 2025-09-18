@@ -1,11 +1,21 @@
+SELECT @@version, @@version_comment, @@hostname, @@port, @@datadir;
+SHOW TABLES FROM mysql LIKE 'default_roles';
+SELECT USER() AS login_user, CURRENT_USER() AS effective_user, DATABASE() AS current_schema;
+
+
+
+
+
+
 /* 유저생성, 권한부여 --------------------- */
 
 -- 유저생성
+CREATE USER 'star1431'@'%' IDENTIFIED BY 'star1431';
 CREATE USER 'lion'@'%' IDENTIFIED BY 'lion1234';
-CREATE USER 'lion'@'localhost' IDENTIFIED BY 'lion1234';
+CREATE USER 'hr'@'%' IDENTIFIED BY 'hr1234';
+
 
 SELECT USER();
-
 CREATE DATABASE likedb;
 
 SHOW DATABASES;
@@ -24,7 +34,7 @@ FLUSH PRIVILEGES;
 
 -- 유저 정보보기
 SELECT user,host FROM mysql.user WHERE user = 'star1431';
-SELECT user,host FROM mysql.user WHERE user = 'lion';
+SELECT user,host FROM mysql.user WHERE user = 'hr';
 
 -- 유저 삭제
 DROP user 'lion'@'localhost';
