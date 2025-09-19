@@ -161,16 +161,17 @@
         ├ 09:00 ~ 18:00 미니프로젝트 DAO DTO 리펙토링
         └ 
     2025.09.18
-        ├ 09:00 ~ 12:00 FrontEnd (웹 역사와 HTML, 개발 환경 Node.js)
-        └ 13:00 ~ 18:00 FrontEnd 
+        ├ 09:00 ~ 12:00 FrontEnd (웹 역사와 HTML, 개발 환경 구축)
+        └ 13:00 ~ 18:00 FrontEnd (Node.js, html 주요태그)
     2025.09.19
-        ├ 
-        └ 
+        ├ 09:00 ~ 12:00 FrontEnd (CSS, CSS 선택자)
+        └ 13:00 ~ 18:00 FrontEnd (cascading 원칙)
 ```
 * [0915내용.md](./src/week_06/_0915/0915내용.md)
 * [0916내용.md](./src/week_06/_0916/0916내용.md)
 * [0917내용.md](./src/week_06/_0917/0917내용.md)
 * [0918내용.md](./src/week_06/_0918/0918내용.md)
+* [0919내용.md](./src/week_06/_0919/0919내용.md)
 
 
 </details>
