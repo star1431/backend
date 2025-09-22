@@ -1,36 +1,32 @@
-package mini_project.model;
-import java.util.HashSet;
-import java.util.LinkedHashMap;
-import java.util.Map;
+package mini_project.dto;
 import java.util.Objects;
-import java.util.Set;
 
 /**
- * Movie Class
- * info : 영화 생성 클래스
+ * 영화 DTO
  * @author 정병천
+ * @since 2025-09-17
  */
-public class Movie {
-    private String id;          // 영화 고유 ID
+public class MovieDTO {
+    private int movieId;        // 영화 고유 ID
     private String title;       // 영화명
     private String type;        // 관람등급
     private String genre;       // 장르
     private int price;          // 가격
 
-    public Movie(String id, String title, String type, String genre, int price) {
-        this.id = id;
+    public MovieDTO() {}
+    public MovieDTO(String title, String type, String genre, int price) {
         this.title = title;
         this.type = type;
         this.genre = genre;
         this.price = price;
     }
 
-    public String getId() {
-        return id;
+    public int getMovieId() {
+        return movieId;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setMovieId(int movieId) {
+        this.movieId = movieId;
     }
 
     public String getTitle() {
@@ -68,7 +64,7 @@ public class Movie {
     @Override
     public String toString() {
         return "Movie{" +
-                "id='" + id + '\'' +
+                "id='" + movieId + '\'' +
                 ", title='" + title + '\'' +
                 ", type='" + type + '\'' +
                 ", genre='" + genre + '\'' +
@@ -79,8 +75,8 @@ public class Movie {
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
-        Movie movie = (Movie) o;
-        return Objects.equals(id, movie.id);
+        MovieDTO movieDTO = (MovieDTO) o;
+        return Objects.equals(movieId, movieDTO.movieId);
         // return Objects.equals(id, movie.id) && 
         //         Objects.equals(title, movie.title) && 
         //         Objects.equals(type, movie.type) && 
@@ -89,7 +85,7 @@ public class Movie {
 
     @Override
     public int hashCode() {
-        return Objects.hash(id);
+        return Objects.hash(movieId);
         // return Objects.hash(id, title, type, genre);
     }
 }

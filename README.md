@@ -175,3 +175,31 @@
 
 
 </details>
+
+
+
+<details>
+    <summary><strong>7 week</strong></summary>
+
+```bash
+    2025.09.22
+        ├ 09:00 ~ 12:00 FrontEnd (css 크기 단위, display)
+        └ 13:00 ~ 18:00 FrontEnd (posoition)
+    2025.09.23
+        ├ 
+        └ 
+    2025.09.24
+        ├ 
+        └ 
+    2025.09.25
+        ├ 
+        └ 
+    2025.09.26
+        ├ 공강
+        └ 
+```
+* [0922내용.md](./src/week_07/_0922/0922내용.md)
+
+
+
+</details>

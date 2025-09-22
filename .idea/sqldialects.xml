@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/src/mini_project/SQL/minimoviedb_create.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/mini_project/SQL/minimoviedb_query.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/src/sql/emp.sql" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/src/sql/hr-schema-mysql.sql" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/src/week_05/_0911/sql/0911_hrdb_exam1.sql" dialect="GenericSQL" />
