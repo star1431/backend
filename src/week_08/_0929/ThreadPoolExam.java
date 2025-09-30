@@ -10,7 +10,7 @@ public class ThreadPoolExam {
         // 고정 크기 스레드 풀 생성 (3개의 스레드)
         ExecutorService executor = Executors.newFixedThreadPool(3);
 
-        // 10개의 작업 제출
+        // 3개의 작업 제출
         for (int i = 1; i <= 3; i++) {
             final int taskId = i;
             executor.submit(() -> {

@@ -5,8 +5,8 @@ import java.io.IOException;
 public class ExamCheckedThrows {
     // FileReader는 파일이 없으면 IOException 발생 (Checked Exception)
     public static void readFile() throws IOException {
-        FileReader fr2 = new FileReader("README.md");
-        System.out.println("README.md 파일 열기 완료");
+        FileReader fr2 = new FileReader("0930_스트림실습문제1.md");
+        System.out.println("0930_스트림실습문제1.md 파일 열기 완료");
         FileReader fr1 = new FileReader("null.txt");
         System.out.println("null.txt 파일 열기 완료");
     }

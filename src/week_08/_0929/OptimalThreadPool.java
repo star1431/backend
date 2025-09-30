@@ -25,7 +25,7 @@ public class OptimalThreadPool {
         int optimalThreadCount = (int) (coreCount / (1 - blockingPercent));
 
         // CPU 코어 수에 맞게 스레드 풀 생성
-        ExecutorService executor = Executors.newFixedThreadPool(coreCount);
+        ExecutorService executor = Executors.newFixedThreadPool(optimalThreadCount);
         System.out.println("CPU 코어 수: " + coreCount);
         System.out.println("I/O 작업 비율: " + (blockingPercent * 100) + "%");
         System.out.println("최적 스레드 수: " + optimalThreadCount);
