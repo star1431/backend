@@ -2,6 +2,10 @@ package week_07._0922;
 
 
 import java.util.Arrays;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 import java.util.Scanner;
 
 public class Main {
@@ -9,22 +13,25 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        int c = sc.nextInt();
+        while(true) {
+            int a = 0, b = 0 , c = 0;
+            a = sc.nextInt();
+            b = sc.nextInt();
+            c = sc.nextInt();
+            if(a == 0 && b == 0 && c == 0) break;
 
-        int[] nums = new int[10];
-        String str = String.valueOf(a * b * c);
+            int powA =  0, powB = 0, powC = 0;
+            powA = (int) Math.pow(a, 2);
+            powB = (int) Math.pow(b, 2);
+            powC = (int) Math.pow(c, 2);
 
-        for (int i = 1; i <= str.length(); i++) {
-            String cur =  str.substring(i - 1, i);
-            for (int j = 0; j < nums.length; j++) {
-                if(j == Integer.parseInt(cur)) nums[j] += 1;
-            }
-        }
+            int maxNum = Math.max(powA, Math.max(powB, powC));
+            String result = "";
 
-        for (int item : nums) {
-            System.out.println(item);
+            if( powA + powB + powC - maxNum*2 == 0) result = "right";
+            else result = "wrong";
+
+            System.out.println(result);
         }
     }
 }
