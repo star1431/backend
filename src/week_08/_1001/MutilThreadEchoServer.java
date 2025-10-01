@@ -27,7 +27,7 @@ public class MutilThreadEchoServer {
                     // socket.getInputStream() - 클라이언트로부터 데이터를 읽어올 수 있는 통로
                     // socket.getOutputStream() - 클라이언트로 데이터를 출력할 수 있는 통로
                     var in = new java.io.BufferedReader(new java.io.InputStreamReader(socket.getInputStream()));
-                    var out = new java.io.PrintWriter(socket.getOutputStream(), true);
+                    var out = new java.io.PrintWriter(socket.getOutputStream(), true); // true - autoFlush
             ) {
                 // getRemoteSocketAddress() - 클라이언트의 IP주소와 포트번호
                 SocketAddress clientAddr = socket.getRemoteSocketAddress();
@@ -69,6 +69,10 @@ public class MutilThreadEchoServer {
                 Socket clientSocket = serverSocket.accept();
                 // 클라이언트 연결 처리 작업을 스레드 풀에 전달
                 executor.submit(new ClientHandler(clientSocket));
+                
+                // 스레드 풀 안쓸 때
+                // Thread thread = new Thread(new ClientHandler(clientSocket));
+                // thread.start();
             }
         } catch (IOException e) {
             System.err.println("서버 오류: " + e.getMessage());
