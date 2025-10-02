@@ -17,27 +17,28 @@ public class UDPEchoServer {
                 // DatagramPacket - 수신 패킷 생성 (클라이언트 -> 서버)
                 DatagramPacket packet = new DatagramPacket(buf, buf.length);
                 
-                // 데이터 수신 대기 (블로킹)
+                // 클라이언트가 데이터를 보낼 때까지 대기(블로킹 호출)
+                // -데이터 수신 시, 패킷 객체에 데이터와 클라이언트 주소/포트 정보가 채워짐
                 socket.receive(packet);
 
                 // 수신된 데이터 처리
                 String message = new String(
-                    packet.getData(), // byte 배열
-                    0, // 시작 인덱스
+                    packet.getData(),  // byte 배열
+                    0,          // 시작 인덱스
                     packet.getLength() // 실제 데이터 길이
                 );
                 System.out.println("수신된 메시지:: " + message);
 
-                // 수신된 데이터를 다시 클라이언트로 에코 (송신 패킷 생성)
+                // 수신된 데이터를 응답 데이터로 변환
                 String responseMessage = "Echo:: "+ message;
                 byte[] responseBuffer = responseMessage.getBytes();
 
                 // DatagramPacket - 송신 패킷 생성 (서버 -> 클라이언트)
                 DatagramPacket sendPacket = new DatagramPacket(
-                        responseBuffer, // 응답 데이터
-                        responseBuffer.length, // 응답 데이터 길이
-                        packet.getAddress(), // 클라이언트 IP 주소
-                        packet.getPort() // 클라이언트 포트 번호
+                        responseBuffer,         // 응답 데이터
+                        responseBuffer.length,  // 응답 데이터 길이
+                        packet.getAddress(),    // 클라이언트 IP 주소
+                        packet.getPort()        // 클라이언트 포트 번호
                 );
                 
                 // 클라이언트 데이터 송신
@@ -49,6 +50,4 @@ public class UDPEchoServer {
             System.out.println("Error: " + e.getMessage());
         }
     }
-
-
 }

@@ -12,6 +12,31 @@ public class ChatTCPServer {
     private static final int PORT = 12345;
     private static final Set<ClientHandler> clients = new HashSet<ClientHandler>();
 
+    public static void main(String[] args) {
+        try(
+            ServerSocket serverSocket = new ServerSocket(PORT)
+        ) {
+            System.out.println("채팅서버 시작!");
+            while (true) {
+                Socket socket = serverSocket.accept();
+                ClientHandler clientHandler = new ClientHandler(socket);
+                clients.add(clientHandler);
+                new Thread(clientHandler).start();
+            }
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+    }
+    
+    // 자기 자신 제외
+    private static void broadcast(String msg, ClientHandler clientMe) {
+        for(ClientHandler client : clients) {
+            if(client != clientMe) {
+                client.sendMsg(msg);
+            }
+        }
+    }
+
     static class ClientHandler implements Runnable {
         private final Socket socket;
         private PrintWriter out; // 바깥으로 설정해서 메서드도 공유
@@ -74,35 +99,6 @@ public class ChatTCPServer {
         }
     }
 
-    // 모두에게 (자기 포함)
-    private static void broadcast(String msg) {
-        for(ClientHandler client : clients) {
-            client.sendMsg(msg);
-        }
-    }
-    // 자기 자신 제외
-    private static void broadcast(String msg, ClientHandler clientMe) {
-        for(ClientHandler client : clients) {
-            if(client != clientMe) {
-                client.sendMsg(msg);
-            }
-        }
-    }
 
-    public static void main(String[] args) {
-        try(
-            ServerSocket serverSocket = new ServerSocket(PORT)
-        ) {
-            System.out.println("채팅서버 시작!");
-            while (true) {
-                Socket socket = serverSocket.accept();
-                ClientHandler clientHandler = new ClientHandler(socket);
-                clients.add(clientHandler);
-                new Thread(clientHandler).start();
-            }
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-        }
-    }
 }
 
