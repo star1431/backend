@@ -1,37 +1,48 @@
 package week_07._0922;
 
 
-import java.util.Arrays;
-import java.util.LinkedHashMap;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
-import java.util.Scanner;
+import java.util.StringTokenizer;
 
 public class Main {
 
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+    public static void main(String[] args) throws Exception {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st;
 
-        while(true) {
-            int a = 0, b = 0 , c = 0;
-            a = sc.nextInt();
-            b = sc.nextInt();
-            c = sc.nextInt();
-            if(a == 0 && b == 0 && c == 0) break;
+        int n = Integer.parseInt(br.readLine()); // N = 참가자수
 
-            int powA =  0, powB = 0, powC = 0;
-            powA = (int) Math.pow(a, 2);
-            powB = (int) Math.pow(b, 2);
-            powC = (int) Math.pow(c, 2);
-
-            int maxNum = Math.max(powA, Math.max(powB, powC));
-            String result = "";
-
-            if( powA + powB + powC - maxNum*2 == 0) result = "right";
-            else result = "wrong";
-
-            System.out.println(result);
+        st = new StringTokenizer(br.readLine(), " "); // 사이즈별 신청자 수
+        List<Integer> sizeLists = new ArrayList<Integer>();
+        while(st.hasMoreTokens()) {
+            sizeLists.add(Integer.parseInt(st.nextToken()));
         }
+
+        st = new StringTokenizer(br.readLine(), " ");
+        int t =  Integer.parseInt(st.nextToken()); // T = 티셔츠 묶음 수
+        int p =  Integer.parseInt(st.nextToken()); // P = 펜 묶음 수
+
+        int[] arr = new int[sizeLists.size()];
+        for (int i = 0; i < sizeLists.size(); i++) {
+            if(sizeLists.get(i) == 0) arr[i] = 0;
+            else if(sizeLists.get(i) <= t) arr[i] = 1;
+            else arr[i] = (int) Math.ceil(sizeLists.get(i) / (double) t);
+        }
+
+        int sum = 0;
+        for (int item : arr) {
+            sum += item;
+        }
+
+        int bundleP = (int) (n / p);
+        int leftP = (int) (n % p);
+
+        System.out.println(sum); // T 최소 묶음 합계
+        System.out.printf("%d %d\n", bundleP, leftP); // P 최대묶음, 나머지
+
+        br.close();
     }
 }
