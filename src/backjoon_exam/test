@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main() {
+    int x = 0x15213F10 >> 4;  // -> 0x015213F1  (칸당 4비트임)
+    char y = (char) x;  // -> char는 1byte(8bit)임 -> 0xF1
+    // char는 부호있는 정수형이니 
+    // 0xF1 -> 1111 0001 에서 반전
+    // -> 0000 1110 + 1 -> 0000 1111 -> |15| -> -15
+    unsigned char z = (unsigned char) x; // 0xF1 -> 241
+    printf("%d %u\n", y, z); // -15 241
+    return 0;
+}
