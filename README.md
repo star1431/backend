@@ -245,11 +245,11 @@
         ├ 09:00 ~ 14:00 backend 프로그래밍 (Spring Framework 복습)
         └ 14:00 ~ 18:00 backend 프로그래밍 (컴포넌트와 오토와이어드, 컴포넌트스캔과 컨피그레이션)
     2025.10.15
-        ├ 
-        └ 
+        ├ 09:00 ~ 14:00 backend 프로그래밍 (SpringBootApplication, PropertySource, Profile)
+        └ 14:00 ~ 18:00 backend 프로그래밍 (@interface, Logging, MVC)
     2025.10.16
-        ├ 
-        └ 
+        ├ 09:00 ~ 14:00 backend 프로그래밍 (Spring MVC Request, Model과 ModelAndView)
+        └ 14:00 ~ 18:00 backend 프로그래밍 (Thymeleaf 템플릿, @ModelAttribute, @PathVariable)
     2025.10.17
         ├ 
         └ 
