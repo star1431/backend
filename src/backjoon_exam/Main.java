@@ -5,33 +5,32 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
-import java.util.HashSet;
+import java.util.ArrayDeque;
+import java.util.Deque;
 import java.util.StringTokenizer;
 
 public class Main {
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-        StringBuilder sb = new StringBuilder();
-        StringTokenizer st;
 
         int n = Integer.parseInt(br.readLine());
-        st = new StringTokenizer(br.readLine(), " ");
-        int i = 0;
-        HashSet<Integer> numbers = new HashSet<>();
-        while (st.hasMoreTokens()) {
-            numbers.add(Integer.parseInt(st.nextToken()));
+
+        Deque<Integer> que = new ArrayDeque<>();
+
+        // 1 ~ n을 큐에 넣기
+        for (int i = 1; i <= n; i++) {
+            que.offer(i); // 큐의 뒤에 추가
         }
 
-        int m = Integer.parseInt(br.readLine());
-        st = new StringTokenizer(br.readLine(), " ");
-        while (st.hasMoreTokens()) {
-            int num = Integer.parseInt(st.nextToken());
-            if(numbers.contains(num)) sb.append(1).append("\n");
-            else sb.append(0).append("\n");
+        // 카드가 1장 남을 때까지 반복
+        while (que.size() > 1) {
+            // int temp = que.peek();
+            que.poll(); // 맨앞 원소 제거
+            que.offer(que.poll());
         }
 
-        bw.write(sb.toString());
+        bw.write(String.valueOf(que.poll()));
         bw.flush();
         bw.close();
         br.close();
