@@ -251,11 +251,38 @@
         ├ 09:00 ~ 14:00 backend 프로그래밍 (Spring MVC Request, Model과 ModelAndView)
         └ 14:00 ~ 18:00 backend 프로그래밍 (Thymeleaf 템플릿, @ModelAttribute, @PathVariable)
     2025.10.17
-        ├ 
+        ├ 공결
         └ 
 ```
-* [1013내용.md](./src/week_08/_1013/1013내용.md)
-* [1014내용.md](./src/week_08/_1014/1014내용.md)
-* [1015내용.md](./src/week_08/_1015/1015내용.md)
+* [1013내용.md](./src/week_09/_1013/1013내용.md)
+* [1014내용.md](./src/week_09/_1014/1014내용.md)
+* [1015내용.md](./src/week_09/_1015/1015내용.md)
+* [1016내용.md](./src/week_09/_1016/1016내용.md)
+
+</details>
+
+<details>
+    <summary><strong>10 week</strong></summary>
+
+```bash
+    2025.10.20
+        ├ 09:00 ~ 14:00 backend 프로그래밍 (Spring Data JDBC, 기존 DAO 패턴 활용)
+        └ 14:00 ~ 18:00 backend 프로그래밍 (repository 패턴 활용)
+    2025.10.21
+        ├ 09:00 ~ 14:00 backend 프로그래밍 (Spring MVC 게시판 CRUD 실습 구현)
+        └ 14:00 ~ 18:00 backend 프로그래밍 (Spring MVC 게시판 CRUD 실습 구현)
+    2025.10.22
+        ├ 09:00 ~ 14:00 backend 프로그래밍 
+        └ 14:00 ~ 18:00 backend 프로그래밍 
+    2025.10.23
+        ├ 09:00 ~ 14:00 
+        └ 14:00 ~ 18:00 
+    2025.10.24
+        ├ 공결
+        └ 
+```
+* [1020내용.md](./src/week_10/_1020/1020내용.md)
+* [1021내용.md](./src/week_10/_1021/1021내용.md)
+* [1022내용.md](./src/week_10/_1022/1022내용.md)
 
 </details>
