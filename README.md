@@ -21,7 +21,7 @@
 </details>
 
 <details>
-    <summary><strong>1 week</strong></summary>
+    <summary><strong>week - 1 (08.13 ~ 08.14)</strong></summary>
 
 ```bash
     2025.08.13 
@@ -38,7 +38,7 @@
 
 
 <details>
-    <summary><strong>2 week</strong></summary>
+    <summary><strong>week - 2 (08.18 ~ 08.22)</strong></summary>
 
 ```bash
     2025.08.18 
@@ -65,7 +65,7 @@
 
 </details>
 <details>
-    <summary><strong>3 week</strong></summary>
+    <summary><strong>week - 3 (08.25 ~ 08.29)</strong></summary>
 
 ```bash
     2025.08.25 
@@ -93,7 +93,7 @@
 </details>
 
 <details>
-    <summary><strong>4 week</strong></summary>
+    <summary><strong>week - 4 (09.01 ~ 09.05)</strong></summary>
 
 ```bash
     2025.09.01
@@ -122,7 +122,7 @@
 
 
 <details>
-    <summary><strong>5 week</strong></summary>
+    <summary><strong>week - 5 (09.08 ~ 09.12)</strong></summary>
 
 ```bash
     2025.09.08
@@ -151,7 +151,7 @@
 
 
 <details>
-    <summary><strong>6 week</strong></summary>
+    <summary><strong>week - 6 (09.15 ~ 09.19)</strong></summary>
 
 ```bash
     2025.09.15
@@ -182,7 +182,7 @@
 
 
 <details>
-    <summary><strong>7 week</strong></summary>
+    <summary><strong>week - 7 (09.22 ~ 09.26)</strong></summary>
 
 ```bash
     2025.09.22
@@ -210,7 +210,7 @@
 </details>
 
 <details>
-    <summary><strong>8 week</strong></summary>
+    <summary><strong>week - 8 (09.29 ~ 10.03)</strong></summary>
 
 ```bash
     2025.09.29
@@ -238,7 +238,7 @@
 
 
 <details>
-    <summary><strong>9 week</strong></summary>
+    <summary><strong>week - 9 (10.13 ~ 10.17)</strong></summary>
 
 ```bash
     2025.10.13
@@ -265,7 +265,7 @@
 </details>
 
 <details>
-    <summary><strong>10 week</strong></summary>
+    <summary><strong>week - 10 (10.20 ~ 10.24)</strong></summary>
 
 ```bash
     2025.10.20
