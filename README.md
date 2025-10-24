@@ -13,7 +13,10 @@
 <details>
     <summary><strong>etc</strong></summary>
 
-* [java_주요메서드_정리.md](./src/etc/java_주요메서드_정리.md)
+* [java_io_주요클래스.md](./src/etc/java_io_주요클래스.md)
+* [java_leng_주요메서드.md](./src/etc/java_leng_주요메서드.md)
+* [java_time_주요메서드.md](./src/etc/java_time_주요메서드.md)
+* [java_util_주요메서드.md](./src/etc/java_util_주요메서드.md)
 
 </details>
 
