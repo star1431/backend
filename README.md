@@ -291,3 +291,27 @@
 * [1024내용.md](./src/week_10/_1024/1024내용.md)
 
 </details>
+
+<details>
+    <summary><strong>week - 11 (10.27 ~ 10.31)</strong></summary>
+
+```bash
+    2025.10.27
+        ├ 09:00 ~ 14:00 backend 프로그래밍 (Spring Data JPA, JpaRepository)
+        └ 14:00 ~ 18:00 backend 프로그래밍 (@Modifying, @Transactional, 페이징과 정렬)
+    2025.10.28
+        ├ 
+        └ 
+    2025.10.29
+        ├ 
+        └ 
+    2025.10.30
+        ├ 
+        └ 
+    2025.10.31
+        ├ 
+        └ 
+```
+* [1027내용.md](./src/week_11/_1027/1027내용.md)
+
+</details>

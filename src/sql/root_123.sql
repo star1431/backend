@@ -1,7 +1,7 @@
 
-CREATE DATABASE minprojdb;
+CREATE DATABASE miniprojectDB;
 SHOW DATABASES;
-GRANT ALL PRIVILEGES on minprojdb.* to 'star1431'@'%';
+GRANT ALL PRIVILEGES on miniprojectDB.* to 'star1431'@'%';
 SHOW GRANTS FOR 'star1431'@'%';
 
 SHOW DATABASES LIKE 'miniprojdb';
