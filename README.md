@@ -300,18 +300,21 @@
         ├ 09:00 ~ 14:00 backend 프로그래밍 (Spring Data JPA, JpaRepository)
         └ 14:00 ~ 18:00 backend 프로그래밍 (@Modifying, @Transactional, 페이징과 정렬)
     2025.10.28
-        ├ 
-        └ 
+        ├ 09:00 ~ 14:00 backend 프로그래밍 (data JPA - repository 구현체, JPA Criteria API)
+        └ 14:00 ~ 18:00 backend 프로그래밍 (Rest API - @RestController, RESTful 서비스, RESTful crud 간단 구현)
     2025.10.29
-        ├ 
-        └ 
+        ├ 09:00 ~ 14:00 backend 프로그래밍 (이전 내용 복습, ResponseEntity)
+        └ 14:00 ~ 18:00 backend 프로그래밍 (http 상태 코드, 예외처리 등 실습)
     2025.10.30
-        ├ 
-        └ 
+        ├ 09:00 ~ 14:00 backend 프로그래밍 (JPA에서 Entity와 DTO, 빌더 패턴)
+        └ 14:00 ~ 18:00 backend 프로그래밍 (Optional & Stream 활용, @ControllerAdvice)
     2025.10.31
-        ├ 
+        ├ 휴강
         └ 
 ```
 * [1027내용.md](./src/week_11/_1027/1027내용.md)
+* [1028내용.md](./src/week_11/_1028/1028내용.md)
+* [1029내용.md](./src/week_11/_1029/1029내용.md)
+* [1030내용.md](./src/week_11/_1030/1030내용.md)
 
 </details>
