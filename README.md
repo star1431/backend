@@ -318,3 +318,30 @@
 * [1030내용.md](./src/week_11/_1030/1030내용.md)
 
 </details>
+
+
+<details>
+    <summary><strong>week - 12 (11.03 ~ 11.07)</strong></summary>
+
+```bash
+    2025.11.03
+        ├ 09:00 ~ 14:00 backend 프로그래밍 (Spring AOP, Spring AOP 주요 어노테이션)
+        └ 14:00 ~ 18:00 backend 프로그래밍 (Spring AOP Aspect 활용)
+    2025.11.04
+        ├ 09:00 ~ 14:00 backend 프로그래밍 (Spring Boot의 스레드 모델, filter와 ThreadLocal)
+        └ 14:00 ~ 18:00 backend 프로그래밍 (Spring Security, Spring Security 설정 방법)
+    2025.11.05
+        ├ 
+        └ 
+    2025.11.06
+        ├ 
+        └ 
+    2025.11.07
+        ├ 
+        └ 
+```
+* [1103내용.md](./src/week_12/_1103/1103내용.md)
+* [1104내용.md](./src/week_12/_1104/1104내용.md)
+
+
+</details>
