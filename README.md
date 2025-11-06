@@ -331,17 +331,18 @@
         ├ 09:00 ~ 14:00 backend 프로그래밍 (Spring Boot의 스레드 모델, filter와 ThreadLocal)
         └ 14:00 ~ 18:00 backend 프로그래밍 (Spring Security, Spring Security 설정 방법)
     2025.11.05
-        ├ 
-        └ 
+        ├ 09:00 ~ 14:00 backend 프로그래밍 (Spring Security, rememberMe, inMemoryUserDetailsManager)
+        └ 14:00 ~ 18:00 backend 프로그래밍 (Spring Security 인터페이스 정리, JPA 활용 security 회원가입 심플 구현)
     2025.11.06
-        ├ 
-        └ 
+        ├ 09:00 ~ 14:00 backend 프로그래밍 (spring security 인증과 인가, Authentication)
+        └ 14:00 ~ 18:00 backend 프로그래밍 (Authorization, 실습)
     2025.11.07
-        ├ 
+        ├ 휴가
         └ 
 ```
 * [1103내용.md](./src/week_12/_1103/1103내용.md)
 * [1104내용.md](./src/week_12/_1104/1104내용.md)
-
+* [1105내용.md](./src/week_12/_1105/1105내용.md)
+* [1106내용.md](./src/week_12/_1106/1106내용.md)
 
 </details>
