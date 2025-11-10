@@ -25,7 +25,7 @@
 
 ```bash
     2025.08.13 
-        ├ 14:00 ~ 18:00 오리엔테이션
+        ├ 13:00 ~ 18:00 오리엔테이션
         └
     2025.08.14
         ├ 09:00 ~ 12:00 Git 설치 & JDK 설치 및 환경설정
@@ -195,8 +195,8 @@
         ├ 09:00 ~ 12:00 FrontEnd (JS 배열 메서드, 객체 순회)
         └ 13:00 ~ 18:00 FrontEnd (클래스와 프로토타입, 동기와 비동기 처리)
     2025.09.25
-        ├ 09:00 ~ 14:00 FrontEnd (DOM 개념, 요소 선택, 요소 제어, 이벤트 처리)
-        └ 14:00 ~ 18:00 자바 프로그래밍 (프로세스와 스레드, 스레드 생성, 동기화, 데몬스레드, 스레드 메서드)
+        ├ 09:00 ~ 12:00 FrontEnd (DOM 개념, 요소 선택, 요소 제어, 이벤트 처리)
+        └ 13:00 ~ 18:00 자바 프로그래밍 (프로세스와 스레드, 스레드 생성, 동기화, 데몬스레드, 스레드 메서드)
     2025.09.26
         ├ 공강
         └ 
@@ -214,17 +214,17 @@
 
 ```bash
     2025.09.29
-        ├ 09:00 ~ 14:00 백엔드 프로그래밍 (스레드 간 통신, 스레드 제어, 데드락 해결방식, 유틸 concurrent)
-        └ 14:00 ~ 18:00 백엔드 프로그래밍 (함수형 프로그래밍, 함수형 인터페이스와 람다식)
+        ├ 09:00 ~ 12:00 백엔드 프로그래밍 (스레드 간 통신, 스레드 제어, 데드락 해결방식, 유틸 concurrent)
+        └ 13:00 ~ 18:00 백엔드 프로그래밍 (함수형 프로그래밍, 함수형 인터페이스와 람다식)
     2025.09.30
-        ├ 09:00 ~ 14:00 백엔드 프로그래밍 (Stream API, 스트림 사용과 생성)
-        └ 14:00 ~ 18:00 백엔드 프로그래밍 (스트림과 객체 참조, 스트림 연산 활용, 옵셔널 클래스)
+        ├ 09:00 ~ 12:00 백엔드 프로그래밍 (Stream API, 스트림 사용과 생성)
+        └ 13:00 ~ 18:00 백엔드 프로그래밍 (스트림과 객체 참조, 스트림 연산 활용, 옵셔널 클래스)
     2025.10.01
-        ├ 09:00 ~ 14:00 Network 프로그래밍 (Network 기본 개념, TCP 통신 이해, Java 네트워크 프로그래밍)
-        └ 14:00 ~ 18:00 Network 프로그래밍 (Java Socket, TCP 채팅 만들기)
+        ├ 09:00 ~ 12:00 Network 프로그래밍 (Network 기본 개념, TCP 통신 이해, Java 네트워크 프로그래밍)
+        └ 13:00 ~ 18:00 Network 프로그래밍 (Java Socket, TCP 채팅 만들기)
     2025.10.02
-        ├ 09:00 ~ 14:00 Network 프로그래밍 (UDP 통신, UDP Echo 구현)
-        └ 14:00 ~ 18:00 Network 프로그래밍 (고급 네트워크 프로그래밍, HTTP 클라이언트, JFrame 채팅 만들기)
+        ├ 09:00 ~ 12:00 Network 프로그래밍 (UDP 통신, UDP Echo 구현)
+        └ 13:00 ~ 18:00 Network 프로그래밍 (고급 네트워크 프로그래밍, HTTP 클라이언트, JFrame 채팅 만들기)
     2025.10.03
         ├ 개천절 공휴일 
         └ 
@@ -242,17 +242,17 @@
 
 ```bash
     2025.10.13
-        ├ 09:00 ~ 14:00 backend 프로그래밍 (Spring Boot 개요, 프로젝트 생성 및 실행)
-        └ 14:00 ~ 18:00 backend 프로그래밍 (Spring Boot 주요 어노테이션, IoC/DI 개념)
+        ├ 09:00 ~ 12:00 backend 프로그래밍 (Spring Boot 개요, 프로젝트 생성 및 실행)
+        └ 13:00 ~ 18:00 backend 프로그래밍 (Spring Boot 주요 어노테이션, IoC/DI 개념)
     2025.10.14
-        ├ 09:00 ~ 14:00 backend 프로그래밍 (Spring Framework 복습)
-        └ 14:00 ~ 18:00 backend 프로그래밍 (컴포넌트와 오토와이어드, 컴포넌트스캔과 컨피그레이션)
+        ├ 09:00 ~ 12:00 backend 프로그래밍 (Spring Framework 복습)
+        └ 13:00 ~ 18:00 backend 프로그래밍 (컴포넌트와 오토와이어드, 컴포넌트스캔과 컨피그레이션)
     2025.10.15
-        ├ 09:00 ~ 14:00 backend 프로그래밍 (SpringBootApplication, PropertySource, Profile)
-        └ 14:00 ~ 18:00 backend 프로그래밍 (@interface, Logging, MVC)
+        ├ 09:00 ~ 12:00 backend 프로그래밍 (SpringBootApplication, PropertySource, Profile)
+        └ 13:00 ~ 18:00 backend 프로그래밍 (@interface, Logging, MVC)
     2025.10.16
-        ├ 09:00 ~ 14:00 backend 프로그래밍 (Spring MVC Request, Model과 ModelAndView)
-        └ 14:00 ~ 18:00 backend 프로그래밍 (Thymeleaf 템플릿, @ModelAttribute, @PathVariable)
+        ├ 09:00 ~ 12:00 backend 프로그래밍 (Spring MVC Request, Model과 ModelAndView)
+        └ 13:00 ~ 18:00 backend 프로그래밍 (Thymeleaf 템플릿, @ModelAttribute, @PathVariable)
     2025.10.17
         ├ 공결
         └ 
@@ -269,17 +269,17 @@
 
 ```bash
     2025.10.20
-        ├ 09:00 ~ 14:00 backend 프로그래밍 (Spring Data JDBC, 기존 DAO 패턴 활용)
-        └ 14:00 ~ 18:00 backend 프로그래밍 (repository 패턴 활용)
+        ├ 09:00 ~ 12:00 backend 프로그래밍 (Spring Data JDBC, 기존 DAO 패턴 활용)
+        └ 13:00 ~ 18:00 backend 프로그래밍 (repository 패턴 활용)
     2025.10.21
-        ├ 09:00 ~ 14:00 backend 프로그래밍 (Spring MVC 게시판 CRUD 실습 구현)
-        └ 14:00 ~ 18:00 backend 프로그래밍 (Spring MVC 게시판 CRUD 실습 구현)
+        ├ 09:00 ~ 12:00 backend 프로그래밍 (Spring MVC 게시판 CRUD 실습 구현)
+        └ 13:00 ~ 18:00 backend 프로그래밍 (Spring MVC 게시판 CRUD 실습 구현)
     2025.10.22
-        ├ 09:00 ~ 14:00 backend 프로그래밍 (JPA 기초, JPA 핵심 구성 요소)
-        └ 14:00 ~ 18:00 backend 프로그래밍 (JPA 프로젝트 생성, EntityManager, JUnit 테스트)
+        ├ 09:00 ~ 12:00 backend 프로그래밍 (JPA 기초, JPA 핵심 구성 요소)
+        └ 13:00 ~ 18:00 backend 프로그래밍 (JPA 프로젝트 생성, EntityManager, JUnit 테스트)
     2025.10.23
-        ├ 09:00 ~ 14:00 backend 프로그래밍 (JUnit JPA Entity 테스트)
-        └ 14:00 ~ 18:00 backend 프로그래밍 (JUtil과 DAO 구현, 엔티티 매핑 심화)
+        ├ 09:00 ~ 12:00 backend 프로그래밍 (JUnit JPA Entity 테스트)
+        └ 13:00 ~ 18:00 backend 프로그래밍 (JUtil과 DAO 구현, 엔티티 매핑 심화)
     2025.10.24
         ├ 
         └ 
@@ -297,17 +297,17 @@
 
 ```bash
     2025.10.27
-        ├ 09:00 ~ 14:00 backend 프로그래밍 (Spring Data JPA, JpaRepository)
-        └ 14:00 ~ 18:00 backend 프로그래밍 (@Modifying, @Transactional, 페이징과 정렬)
+        ├ 09:00 ~ 12:00 backend 프로그래밍 (Spring Data JPA, JpaRepository)
+        └ 13:00 ~ 18:00 backend 프로그래밍 (@Modifying, @Transactional, 페이징과 정렬)
     2025.10.28
-        ├ 09:00 ~ 14:00 backend 프로그래밍 (data JPA - repository 구현체, JPA Criteria API)
-        └ 14:00 ~ 18:00 backend 프로그래밍 (Rest API - @RestController, RESTful 서비스, RESTful crud 간단 구현)
+        ├ 09:00 ~ 12:00 backend 프로그래밍 (data JPA - repository 구현체, JPA Criteria API)
+        └ 13:00 ~ 18:00 backend 프로그래밍 (Rest API - @RestController, RESTful 서비스, RESTful crud 간단 구현)
     2025.10.29
-        ├ 09:00 ~ 14:00 backend 프로그래밍 (이전 내용 복습, ResponseEntity)
-        └ 14:00 ~ 18:00 backend 프로그래밍 (http 상태 코드, 예외처리 등 실습)
+        ├ 09:00 ~ 12:00 backend 프로그래밍 (이전 내용 복습, ResponseEntity)
+        └ 13:00 ~ 18:00 backend 프로그래밍 (http 상태 코드, 예외처리 등 실습)
     2025.10.30
-        ├ 09:00 ~ 14:00 backend 프로그래밍 (JPA에서 Entity와 DTO, 빌더 패턴)
-        └ 14:00 ~ 18:00 backend 프로그래밍 (Optional & Stream 활용, @ControllerAdvice)
+        ├ 09:00 ~ 12:00 backend 프로그래밍 (JPA에서 Entity와 DTO, 빌더 패턴)
+        └ 13:00 ~ 18:00 backend 프로그래밍 (Optional & Stream 활용, @ControllerAdvice)
     2025.10.31
         ├ 휴강
         └ 
@@ -325,17 +325,17 @@
 
 ```bash
     2025.11.03
-        ├ 09:00 ~ 14:00 backend 프로그래밍 (Spring AOP, Spring AOP 주요 어노테이션)
-        └ 14:00 ~ 18:00 backend 프로그래밍 (Spring AOP Aspect 활용)
+        ├ 09:00 ~ 12:00 backend 프로그래밍 (Spring AOP, Spring AOP 주요 어노테이션)
+        └ 13:00 ~ 18:00 backend 프로그래밍 (Spring AOP Aspect 활용)
     2025.11.04
-        ├ 09:00 ~ 14:00 backend 프로그래밍 (Spring Boot의 스레드 모델, filter와 ThreadLocal)
-        └ 14:00 ~ 18:00 backend 프로그래밍 (Spring Security, Spring Security 설정 방법)
+        ├ 09:00 ~ 12:00 backend 프로그래밍 (Spring Boot의 스레드 모델, filter와 ThreadLocal)
+        └ 13:00 ~ 18:00 backend 프로그래밍 (Spring Security, Spring Security 설정 방법)
     2025.11.05
-        ├ 09:00 ~ 14:00 backend 프로그래밍 (Spring Security, rememberMe, inMemoryUserDetailsManager)
-        └ 14:00 ~ 18:00 backend 프로그래밍 (Spring Security 인터페이스 정리, JPA 활용 security 회원가입 심플 구현)
+        ├ 09:00 ~ 12:00 backend 프로그래밍 (Spring Security, rememberMe, inMemoryUserDetailsManager)
+        └ 13:00 ~ 18:00 backend 프로그래밍 (Spring Security 인터페이스 정리, JPA 활용 security 회원가입 심플 구현)
     2025.11.06
-        ├ 09:00 ~ 14:00 backend 프로그래밍 (spring security 인증과 인가, Authentication)
-        └ 14:00 ~ 18:00 backend 프로그래밍 (Authorization, 실습)
+        ├ 09:00 ~ 12:00 backend 프로그래밍 (spring security 인증과 인가, Authentication)
+        └ 13:00 ~ 18:00 backend 프로그래밍 (Authorization, 실습)
     2025.11.07
         ├ 휴가
         └ 
