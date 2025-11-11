@@ -346,3 +346,30 @@
 * [1106내용.md](./src/week_12/_1106/1106내용.md)
 
 </details>
+
+
+<details>
+    <summary><strong>week - 13 (11.10 ~ 11.14)</strong></summary>
+
+```bash
+    2025.11.10
+        ├ 09:00 ~ 12:00 backend 프로그래밍 (JWT 인증, 세션 관리의 한계와 JWT의 필요성)
+        └ 13:00 ~ 18:00 backend 프로그래밍 (JWT 구조와 동작 원리, JWT 심플 구현, JWT tokenizer 구현)
+    2025.11.11
+        ├ 09:00 ~ 12:00 backend 프로그래밍 (UserDetails 구현, UserDetailsService 구현)
+        └ 13:00 ~ 18:00 backend 프로그래밍 (JWT 인증을 위한 패키지 구성, RefreshToken 구현, JWT Exception 처리 구현)
+    2025.11.12
+        ├ 
+        └ 
+    2025.11.13
+        ├ 
+        └ 
+    2025.11.14
+        ├ 
+        └ 
+```
+
+* [1110내용.md](./src/week_13/_1110/1110내용.md)
+* [1111내용.md](./src/week_13/_1111/1111내용.md)
+
+</details>
