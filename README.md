@@ -359,8 +359,8 @@
         ├ 09:00 ~ 12:00 backend 프로그래밍 (UserDetails 구현, UserDetailsService 구현)
         └ 13:00 ~ 18:00 backend 프로그래밍 (JWT 인증을 위한 패키지 구성, RefreshToken 구현, JWT Exception 처리 구현)
     2025.11.12
-        ├ 
-        └ 
+        ├ 09:00 ~ 12:00 backend 프로그래밍 (JWT 인증 흐름 심화 학습, JwtAuthenticationToken 구현)
+        └ 13:00 ~ 18:00 backend 프로그래밍 (JwtTokenizer, JwtAuthenticationFilter, SecurityConfig, UserApiController)
     2025.11.13
         ├ 
         └ 
@@ -371,5 +371,6 @@
 
 * [1110내용.md](./src/week_13/_1110/1110내용.md)
 * [1111내용.md](./src/week_13/_1111/1111내용.md)
+* [1112내용.md](./src/week_13/_1112/1112내용.md)
 
 </details>
