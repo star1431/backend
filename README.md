@@ -406,3 +406,30 @@
 * [1120내용-오후.md](./src/week_14/_1120/1120-1_java내용.md)
 
 </details>
+
+<details>
+    <summary><strong>week - 15 (11.24 ~ 11.28)</strong></summary>
+
+```bash
+    2025.11.24
+        ├ 09:00 ~ 12:00 Devops (Docker 심화, ubuntu, nginx)
+        └ 13:00 ~ 18:00 Devops (Docker 명령어 정리, Docker 네트워크)
+    2025.11.25
+        ├ 09:00 ~ 12:00 Devops (Docker 이미지와 레이어, Dockerfile)
+        └ 13:00 ~ 18:00 Devops (Docker 이미지 빌드/관리, Docker 레지스트리, Docker Compose)
+    2025.11.26
+        ├ 09:00 ~ 12:00 Devops (nginx 이해, 로드밸런싱 이해)
+        └ 13:00 ~ 18:00 Devops (nginx 로드밸런싱 환경 구성 실습)
+    2025.11.27
+        ├ 09:00 ~ 12:00 Devops 
+        └ 13:00 ~ 18:00 Devops
+    2025.11.28
+        ├ 휴강
+        └ 
+```
+
+* [1124내용.md](./src/week_15/_1124/1124내용.md)
+* [1125내용.md](./src/week_15/_1125/1125내용.md)
+* [1126내용.md](./src/week_15/_1126/1126내용.md)
+
+</details>
