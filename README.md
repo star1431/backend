@@ -440,11 +440,11 @@
 
 ```bash
     2025.12.01
-        ├ 
-        └ 
+        ├ 09:00 ~ 12:00 Devops (모니터링, Spring Boot Actuator)
+        └ 13:00 ~ 18:00 Devops (Prometheus 메트릭)
     2025.12.02
-        ├ 
-        └ 
+        ├ 09:00 ~ 12:00 Devops (Grafana 대시보드 구성)
+        └ 13:00 ~ 18:00 Devops (Grafana JVM 패널에 대한 이해, heapdump (hprof) 분석)
     2025.12.03
         ├ 
         └ 
@@ -457,6 +457,7 @@
 ```
 
 * [1201내용.md](./src/week_16/_1201/1201내용.md)
+* [1202내용.md](./src/week_16/_1202/1202내용.md)
 
 
 </details>
