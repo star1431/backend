@@ -446,18 +446,50 @@
         ├ 09:00 ~ 12:00 Devops (Grafana 대시보드 구성)
         └ 13:00 ~ 18:00 Devops (Grafana JVM 패널에 대한 이해, heapdump (hprof) 분석)
     2025.12.03
-        ├ 
-        └ 
+        ├ 09:00 ~ 12:00 Devops (CI/CD 이해 및 Jenkins CI/CD)
+        └ 13:00 ~ 18:00 Devops (Jenkins SSH EC2, Github Actions CI/CD)
     2025.12.04
-        ├ 
-        └ 
+        ├ 09:00 ~ 12:00 Devops (Kubernetes, 환경 구성, pod와 deployment)
+        └ 13:00 ~ 18:00 Devops (Service Networking, ConfigMap와 Secret)
     2025.12.05
-        ├ 
-        └ 
+        ├ 09:00 ~ 12:00 Devops (Kubernetes Volume)
+        └ 13:00 ~ 18:00 Devops (Kubernetes 프론트-백엔드 실습, 스케일링과 롤링 업데이트)
 ```
 
 * [1201내용.md](./src/week_16/_1201/1201내용.md)
 * [1202내용.md](./src/week_16/_1202/1202내용.md)
+* [1203내용.md](./src/week_16/_1203/1203내용.md)
+* [1204내용.md](./src/week_16/_1204/1204내용.md)
+* [1205내용.md](./src/week_16/_1205/1205내용.md)
+
+
+</details>
+
+
+<details>
+    <summary><strong>week - 17 (12.08 ~ 12.12)</strong></summary>
+
+```bash
+    2025.12.08
+        ├ 09:00 ~ 12:00 FrontEnd (js 복습, arrow 함수 심화)
+        └ 13:00 ~ 18:00 FrontEnd (구조분해할당, 나머지 매개변수, 스프레드 문법) 
+    2025.12.09
+        ├ 09:00 ~ 12:00 FrontEnd (React 기초, 컴포넌트 개념)
+        └ 13:00 ~ 18:00 FrontEnd (React props, useState 기초) 
+    2025.12.10
+        ├ 09:00 ~ 12:00 FrontEnd (React Children props)
+        └ 13:00 ~ 18:00 FrontEnd (React 조건부/리스트 렌더링, 컴포넌트 실습)
+    2025.12.11
+        ├ 
+        └ 
+    2025.12.12
+        ├ 
+        └ 
+```
+
+* [1208내용.md](./src/week_17/_1208/1208내용.md)
+* [1209내용.md](./src/week_17/_1209/1209내용.md)
+* [1210내용.md](./src/week_17/_1210/1210내용.md)
 
 
 </details>
