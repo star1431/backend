@@ -480,16 +480,18 @@
         ├ 09:00 ~ 12:00 FrontEnd (React Children props)
         └ 13:00 ~ 18:00 FrontEnd (React 조건부/리스트 렌더링, 컴포넌트 실습)
     2025.12.11
-        ├ 
-        └ 
+        ├ 09:00 ~ 12:00 FrontEnd (React 복습)
+        └ 13:00 ~ 18:00 FrontEnd (UseRef, UseEffect, 간단한 게시판 실습)
     2025.12.12
-        ├ 
-        └ 
+        ├ 09:00 ~ 12:00 FrontEnd (React - 비동기 통신 (Fetch API))
+        └ 13:00 ~ 18:00 FrontEnd (React - Router와 Link, 복습 및 실습)
 ```
 
 * [1208내용.md](./src/week_17/_1208/1208내용.md)
 * [1209내용.md](./src/week_17/_1209/1209내용.md)
 * [1210내용.md](./src/week_17/_1210/1210내용.md)
+* [1211내용.md](./src/week_17/_1211/1211내용.md)
+* [1212내용.md](./src/week_17/_1212/1212내용.md)
 
 
 </details>
